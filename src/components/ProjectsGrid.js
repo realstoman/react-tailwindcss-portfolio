@@ -1,4 +1,5 @@
 import { FiSearch } from 'react-icons/fi';
+import ProjectSingle from './ProjectSingle';
 
 const ProjectsGrid = () => {
 	return (
@@ -91,7 +92,7 @@ const ProjectsGrid = () => {
 				:key="project.id"
 				:project="project"
 			/> */}
-				A single project
+				<ProjectSingle></ProjectSingle>
 			</div>
 			{/* Projects grid end */}
 		</section>
