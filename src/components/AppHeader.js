@@ -1,3 +1,6 @@
+import logoLight from '../images/logo-light.svg';
+import logoDark from '../images/logo-dark.svg';
+
 const AppHeader = () => {
 	return (
 		<div>
@@ -9,7 +12,7 @@ const AppHeader = () => {
 						<div>
 							<a href="/">
 								<img
-									src="../images/logo-dark.svg"
+									src={logoDark}
 									className="w-36"
 									alt="Dark Logo"
 								/>

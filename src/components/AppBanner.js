@@ -1,4 +1,6 @@
 import { FiArrowDownCircle } from 'react-icons/fi';
+import developerLight from '../images/developer.svg';
+import developerDark from '../images/developer-dark.svg';
 
 const AppBanner = () => {
 	return (
@@ -23,7 +25,7 @@ const AppBanner = () => {
 				</div>
 			</div>
 			<div className="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0">
-				<img src="@/assets/images/developer.svg" alt="Developer" />
+				<img src={developerLight} alt="Developer" />
 			</div>
 		</section>
 	);
