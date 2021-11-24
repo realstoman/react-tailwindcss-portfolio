@@ -8,8 +8,11 @@ const AppHeader = () => {
 					<div class="flex justify-between items-center px-4 sm:px-0">
 						<div>
 							<a href="/">
-								<img src="" class="w-36" alt="Dark Logo" />
-								<img src="" class="w-36" alt="Light Logo" />
+								<img
+									src="../images/logo-dark.svg"
+									class="w-36"
+									alt="Dark Logo"
+								/>
 							</a>
 						</div>
 
