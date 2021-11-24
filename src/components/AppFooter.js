@@ -1,3 +1,5 @@
+import { FiGithub, FiTwitter, FiInstagram, FiFeather } from 'react-icons/fi';
+
 const AppFooter = () => {
 	return (
 		<div className="container mx-auto">
@@ -13,7 +15,28 @@ const AppFooter = () => {
 							target="__blank"
 							className="text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer rounded-lg bg-gray-50 dark:bg-ternary-dark hover:bg-gray-100 shadow-sm p-4"
 						>
-							FB
+							<FiGithub className="w-6 sm:w-8 h-6 sm:h-8"></FiGithub>
+						</a>
+						<a
+							href="/fb"
+							target="__blank"
+							className="text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer rounded-lg bg-gray-50 dark:bg-ternary-dark hover:bg-gray-100 shadow-sm p-4"
+						>
+							<FiTwitter className="w-6 sm:w-8 h-6 sm:h-8"></FiTwitter>
+						</a>
+						<a
+							href="/fb"
+							target="__blank"
+							className="text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer rounded-lg bg-gray-50 dark:bg-ternary-dark hover:bg-gray-100 shadow-sm p-4"
+						>
+							<FiInstagram className="w-6 sm:w-8 h-6 sm:h-8"></FiInstagram>
+						</a>
+						<a
+							href="/fb"
+							target="__blank"
+							className="text-gray-400 hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer rounded-lg bg-gray-50 dark:bg-ternary-dark hover:bg-gray-100 shadow-sm p-4"
+						>
+							<FiFeather className="w-6 sm:w-8 h-6 sm:h-8"></FiFeather>
 						</a>
 					</ul>
 				</div>

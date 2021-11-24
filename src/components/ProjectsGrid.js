@@ -1,3 +1,5 @@
+import { FiSearch } from 'react-icons/fi';
+
 const ProjectsGrid = () => {
 	return (
 		<section className="pt-20 sm:pt-28">
@@ -49,10 +51,7 @@ const ProjectsGrid = () => {
                                 cursor-pointer
                                 "
 						>
-							<i
-								data-feather="search"
-								className="text-ternary-dark dark:text-ternary-light"
-							></i>
+							<FiSearch className="text-ternary-dark dark:text-ternary-light w-5 h-5"></FiSearch>
 						</span>
 						<input
 							className="
@@ -60,7 +59,8 @@ const ProjectsGrid = () => {
                                 pr-1
                                 sm:px-4
                                 py-2
-                                border-1 border-gray-200
+                                border 
+                            border-gray-200
                                 dark:border-secondary-dark
                                 rounded-lg
                                 text-sm
