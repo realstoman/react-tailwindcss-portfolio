@@ -1,7 +1,9 @@
+import AppBanner from '../components/AppBanner';
+
 const Home = () => {
 	return (
-		<div>
-			<h1>Home Page</h1>
+		<div className="container mx-auto">
+			<AppBanner></AppBanner>
 		</div>
 	);
 };

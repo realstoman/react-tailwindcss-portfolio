@@ -1,16 +1,16 @@
 const AppHeader = () => {
 	return (
 		<div>
-			<nav id="nav" class="sm:container sm:mx-auto">
+			<nav id="nav" className="sm:container sm:mx-auto">
 				{/* Header start */}
-				<div class="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center my-6">
+				<div className="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center my-6">
 					{/* Header menu links and small screen hamburger menu start */}
-					<div class="flex justify-between items-center px-4 sm:px-0">
+					<div className="flex justify-between items-center px-4 sm:px-0">
 						<div>
 							<a href="/">
 								<img
 									src="../images/logo-dark.svg"
-									class="w-36"
+									className="w-36"
 									alt="Dark Logo"
 								/>
 							</a>
@@ -19,16 +19,16 @@ const AppHeader = () => {
 						{/* Theme switcher small screen end */}
 
 						{/* Small screen hamburger menu start */}
-						<div class="sm:hidden">
+						<div className="sm:hidden">
 							<button
 								type="button"
-								class="focus:outline-none"
+								className="focus:outline-none"
 								aria-label="Hamburger Menu"
 							>
 								<svg
 									xmlns="http://www.w3.org/2000/svg"
 									viewBox="0 0 24 24"
-									class="h-7 w-7 fill-current text-secondary-dark dark:text-ternary-light"
+									className="h-7 w-7 fill-current text-secondary-dark dark:text-ternary-light"
 								>
 									<path
 										v-if="isOpen"
@@ -49,31 +49,31 @@ const AppHeader = () => {
 					{/* Header menu links and small screen hamburger menu end */}
 
 					{/* Header links start*/}
-					<div class="m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none">
+					<div className="m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none">
 						<a
 							href="/projects"
-							class="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+							className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
 							aria-label="Projects"
 						>
 							Projects
 						</a>
 						<a
 							href="/about"
-							class="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
+							className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
 							aria-label="About Me"
 						>
 							About Me
 						</a>
 						<a
 							href="/contact"
-							class="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
+							className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
 							aria-label="Contact"
 						>
 							Contact
 						</a>
-						<div class="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark">
+						<div className="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark">
 							<button
-								class="sm:hidden block text-left text-md font-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-4 py-2 mt-2"
+								className="sm:hidden block text-left text-md font-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-4 py-2 mt-2"
 								aria-label="Hire Me Button"
 							>
 								Hire Me
@@ -83,11 +83,11 @@ const AppHeader = () => {
 					{/* Header links end */}
 
 					{/* Header right section buttons start */}
-					<div class="hidden sm:flex justify-between items-center flex-col md:flex-row">
+					<div className="hidden sm:flex justify-between items-center flex-col md:flex-row">
 						{/* Hire me button start */}
 						<div>
 							<button
-								class="text-md font-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-lg px-5 py-2.5"
+								className="text-md font-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-lg px-5 py-2.5"
 								aria-label="Hire Me Button"
 							>
 								Hire Me
