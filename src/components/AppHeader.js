@@ -1,3 +1,4 @@
+import { FiMoon, FiSun } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
 // import logoLight from '../images/logo-light.svg';
@@ -21,7 +22,7 @@ const AppHeader = () => {
 							</Link>
 						</div>
 
-						{/* Theme switcher small screen end */}
+						{/* Theme switcher small screen */}
 
 						{/* Small screen hamburger menu start */}
 						<div className="sm:hidden">
@@ -100,7 +101,15 @@ const AppHeader = () => {
 						</div>
 						{/* Hire me button end */}
 
-						{/* Theme switcher here */}
+						{/* Theme switcher large screen */}
+						<div
+							onClick="toggleTheme"
+							aria-label="Theme Switcher"
+							className="ml-8 bg-primary-light dark:bg-ternary-dark px-3 py-2 shadow-sm rounded-xl cursor-pointer"
+						>
+							<FiMoon class="text-liText-ternary-dark hover:text-gray-400 dark:text-liText-ternary-light dark:hover:text-liBorder-primary-light w-5" />
+							<FiSun class="text-gray-200 hover:text-gray-50 w-5" />
+						</div>
 					</div>
 				</div>
 			</nav>
