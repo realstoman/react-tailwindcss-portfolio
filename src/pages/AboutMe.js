@@ -1,7 +1,9 @@
+import AboutMeBio from '../components/AboutMeBio';
+
 const About = () => {
 	return (
-		<div>
-			<h1>This is the About me page</h1>
+		<div className="container mx-auto">
+			<AboutMeBio />
 		</div>
 	);
 };
