@@ -1,4 +1,5 @@
 import { FiSearch } from 'react-icons/fi';
+import ProjectsFilter from './ProjectsFilter';
 import ProjectSingle from './ProjectSingle';
 
 const ProjectsGrid = () => {
@@ -80,7 +81,8 @@ const ProjectsGrid = () => {
 						/>
 					</div>
 					{/* <ProjectsFilter @change="selectedProject = $event" /> */}
-					<p>Filter projects</p>
+					<ProjectsFilter />
+					{/* <p>Filter projects</p> */}
 				</div>
 			</div>
 			{/* Filter and search projects end */}
