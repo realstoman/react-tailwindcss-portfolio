@@ -1,7 +1,9 @@
+import ProjectsGrid from '../components/ProjectsGrid';
+
 const Projects = () => {
 	return (
-		<div>
-			<h1>This is the projects page</h1>
+		<div className="container mx-auto">
+			<ProjectsGrid />
 		</div>
 	);
 };
