@@ -2,7 +2,7 @@ import { FiMoon, FiSun } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import ThemeSwitcher from '../hooks/ThemeSwitcher';
 
-// import logoLight from '../images/logo-light.svg';
+import logoLight from '../images/logo-light.svg';
 import logoDark from '../images/logo-dark.svg';
 
 const AppHeader = () => {
@@ -17,11 +17,19 @@ const AppHeader = () => {
 					<div className="flex justify-between items-center px-4 sm:px-0">
 						<div>
 							<Link to="/">
-								<img
-									src={logoDark}
-									className="w-36"
-									alt="Dark Logo"
-								/>
+								{activeTheme === 'dark' ? (
+									<img
+										src={logoDark}
+										className="w-36"
+										alt="Dark Logo"
+									/>
+								) : (
+									<img
+										src={logoLight}
+										className="w-36"
+										alt="Dark Logo"
+									/>
+								)}
 							</Link>
 						</div>
 
@@ -108,12 +116,12 @@ const AppHeader = () => {
 						<div
 							onClick={() => setTheme(activeTheme)}
 							aria-label="Theme Switcher"
-							className="ml-8 bg-primary-light dark:bg-ternary-dark px-3 py-2 shadow-sm rounded-xl cursor-pointer"
+							className="ml-8 bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer"
 						>
 							{activeTheme === 'dark' ? (
-								<FiMoon class="text-liText-ternary-dark hover:text-gray-400 dark:text-liText-ternary-light dark:hover:text-liBorder-primary-light w-5" />
+								<FiMoon class="text-liText-ternary-dark hover:text-gray-400 dark:text-liText-ternary-light dark:hover:text-liBorder-primary-light text-xl" />
 							) : (
-								<FiSun class="text-gray-200 hover:text-gray-50 w-5" />
+								<FiSun class="text-gray-200 hover:text-gray-50 text-xl" />
 							)}
 						</div>
 					</div>
