@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-import logoLight from '../images/logo-light.svg';
+// import logoLight from '../images/logo-light.svg';
 import logoDark from '../images/logo-dark.svg';
 
 const AppHeader = () => {

@@ -1,8 +1,6 @@
 const Contact = () => {
 	return (
-		<div>
-			<h1>This is the contact page</h1>
-		</div>
+		<div className="container mx-auto sm:flex py-5 sm:py-10 mt-10 sm:mt-20"></div>
 	);
 };
 
