@@ -9,7 +9,7 @@ import Contact from './pages/Contact';
 
 function App() {
 	return (
-		<div className="App">
+		<div className=" bg-secondary-light dark:bg-primary-dark transition duration-500">
 			<Router>
 				<AppHeader></AppHeader>
 				<Routes>
