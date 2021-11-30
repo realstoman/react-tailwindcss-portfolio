@@ -30,7 +30,7 @@ const AppBanner = () => {
 			<div className="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0">
 				<img
 					src={
-						activeTheme === 'light' ? developerLight : developerDark
+						activeTheme === 'dark' ? developerDark : developerLight
 					}
 					alt="Developer"
 				/>
