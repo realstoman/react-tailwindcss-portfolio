@@ -1,27 +1,39 @@
+import { FiMoon, FiSun } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
+import ThemeSwitcher from '../hooks/ThemeSwitcher';
 
-// import logoLight from '../images/logo-light.svg';
+import logoLight from '../images/logo-light.svg';
 import logoDark from '../images/logo-dark.svg';
 
 const AppHeader = () => {
+	const [activeTheme, setTheme] = ThemeSwitcher();
+
 	return (
 		<div>
 			<nav id="nav" className="sm:container sm:mx-auto">
 				{/* Header start */}
-				<div className="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center my-6">
+				<div className="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center py-6">
 					{/* Header menu links and small screen hamburger menu start */}
 					<div className="flex justify-between items-center px-4 sm:px-0">
 						<div>
 							<Link to="/">
-								<img
-									src={logoDark}
-									className="w-36"
-									alt="Dark Logo"
-								/>
+								{activeTheme === 'dark' ? (
+									<img
+										src={logoDark}
+										className="w-36"
+										alt="Dark Logo"
+									/>
+								) : (
+									<img
+										src={logoLight}
+										className="w-36"
+										alt="Dark Logo"
+									/>
+								)}
 							</Link>
 						</div>
 
-						{/* Theme switcher small screen end */}
+						{/* Theme switcher small screen */}
 
 						{/* Small screen hamburger menu start */}
 						<div className="sm:hidden">
@@ -100,7 +112,18 @@ const AppHeader = () => {
 						</div>
 						{/* Hire me button end */}
 
-						{/* Theme switcher here */}
+						{/* Theme switcher large screen */}
+						<div
+							onClick={() => setTheme(activeTheme)}
+							aria-label="Theme Switcher"
+							className="ml-8 bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer"
+						>
+							{activeTheme === 'dark' ? (
+								<FiMoon className="text-liText-ternary-dark hover:text-gray-400 dark:text-liText-ternary-light dark:hover:text-liBorder-primary-light text-xl" />
+							) : (
+								<FiSun className="text-gray-200 hover:text-gray-50 text-xl" />
+							)}
+						</div>
 					</div>
 				</div>
 			</nav>

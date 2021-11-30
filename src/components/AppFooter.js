@@ -49,7 +49,7 @@ const AppFooter = () => {
 						<a
 							href="https://stoman.me"
 							target="__blank"
-							className="text-secondary-dark dark:text-secondary-light font-medium uppercase hover:underline"
+							className="text-secondary-dark dark:text-secondary-light font-medium uppercase hover:underline ml-1"
 						>
 							Stoman
 						</a>

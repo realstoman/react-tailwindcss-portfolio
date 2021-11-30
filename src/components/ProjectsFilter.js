@@ -24,12 +24,14 @@ const ProjectsFilter = () => {
                 dark:text-ternary-light
             "
 		>
-			<option value class="text-sm sm:text-md">
+			<option value className="text-sm sm:text-md">
 				All Projects
 			</option>
 
 			{selectOptions.map((option) => (
-				<option className="text-normal sm:text-md">{option}</option>
+				<option className="text-normal sm:text-md" key={option}>
+					{option}
+				</option>
 			))}
 		</select>
 	);
