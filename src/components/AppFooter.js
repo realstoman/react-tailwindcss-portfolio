@@ -64,9 +64,8 @@ const AppFooter = () => {
 				{/* Footer copyright start */}
 				<div className="flex justify-center items-center text-center">
 					<div className="text-lg text-ternary-dark dark:text-ternary-light">
-						&copy;{' '}
 						<Link to="https://github.com/NangialaiStoman/react-tailwindcss-portfolio">
-							Copyright 2021. React & TailwindCSS Portfolio
+							&copy; 2021. React & TailwindCSS Portfolio
 						</Link>
 						.
 						<Link

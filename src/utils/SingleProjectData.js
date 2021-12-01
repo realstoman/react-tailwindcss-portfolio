@@ -133,7 +133,7 @@ export const ProjectInfo = {
 			url: 'https://www.youtube.com/c/StomanStudio',
 		},
 		{
-			id: 5,
+			id: 6,
 			name: 'Dribbble',
 			icon: <FiDribbble />,
 			url: 'https://www.dribbble.com/',
