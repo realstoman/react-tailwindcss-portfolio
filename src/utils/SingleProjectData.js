@@ -63,7 +63,7 @@ export const ProjectInfo = {
 	],
 	ObjectivesHeading: 'Objective',
 	ObjectivesDetails:
-		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam, quis odit cumque vero voluptate, reiciendis amet non!',
+		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam.',
 	Technologies: [
 		{
 			title: 'Tools & Technologies',
@@ -131,12 +131,6 @@ export const ProjectInfo = {
 			name: 'Youtube',
 			icon: <FiYoutube />,
 			url: 'https://www.youtube.com/c/StomanStudio',
-		},
-		{
-			id: 6,
-			name: 'Dribbble',
-			icon: <FiDribbble />,
-			url: 'https://www.dribbble.com/',
 		},
 	],
 };

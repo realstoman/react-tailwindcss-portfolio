@@ -11,9 +11,10 @@ const ProjectsGrid = () => {
 				<p className="text-2xl sm:text-5xl font-semibold mb-3 text-ternary-dark dark:text-ternary-light">
 					Projects portfolio
 				</p>
-				<p className="text-md sm:text-xl text-gray-500 dark:text-ternary-light">
+				{/* Note: This description is commented, but if you want to have it, just uncomment it */}
+				{/* <p className="text-md sm:text-xl text-gray-500 dark:text-ternary-light">
 					Some of my projects are listed below
-				</p>
+				</p> */}
 			</div>
 			{/* Projects grid title end */}
 
