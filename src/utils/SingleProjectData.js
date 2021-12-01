@@ -5,13 +5,13 @@ import Image4 from '../images/mobile-project-1.jpg';
 import Image5 from '../images/web-project-1.jpg';
 import Image6 from '../images/ui-project-2.jpg';
 
-export const singleProjectHeader = {
+export const ProjectHeader = {
 	title: 'Project Management UI',
 	publishDate: 'Jul 26, 2021',
 	tags: 'UI / Frontend',
 };
 
-export const projectImages = [
+export const ProjectImages = [
 	{
 		id: 1,
 		title: 'Kabul Project Management UI',
@@ -29,9 +29,9 @@ export const projectImages = [
 	},
 ];
 
-export const projectInfo = {
-	clientHeading: 'About Client',
-	companyInfos: [
+export const ProjectInfo = {
+	ClientHeading: 'About Client',
+	CompanyInfo: [
 		{
 			id: 1,
 			title: 'Name',
@@ -53,10 +53,10 @@ export const projectInfo = {
 			details: '555 8888 888',
 		},
 	],
-	objectivesHeading: 'Objective',
-	objectivesDetails:
+	ObjectivesHeading: 'Objective',
+	ObjectivesDetails:
 		'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, natus! Quibusdam enim quod in esse, mollitia molestias incidunt quas ipsa accusamus veniam, quis odit cumque vero voluptate, reiciendis amet non!',
-	technlogies: [
+	Technologies: [
 		{
 			title: 'Tools & Technologies',
 			techs: [
@@ -69,8 +69,8 @@ export const projectInfo = {
 			],
 		},
 	],
-	projectDetailsHeading: 'Challenge',
-	projectDetails: [
+	ProjectDetailsHeading: 'Challenge',
+	ProjectDetails: [
 		{
 			id: 1,
 			details:
@@ -92,8 +92,8 @@ export const projectInfo = {
 				'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
 		},
 	],
-	socialSharingsHeading: 'Share This',
-	socialSharings: [
+	SocialSharingsHeading: 'Share This',
+	SocialSharings: [
 		{
 			id: 1,
 			name: 'Twitter',
@@ -133,9 +133,9 @@ export const projectInfo = {
 	],
 };
 
-export const relatedProject = {
-	relatedProjectsHeading: 'Related Projects',
-	relatedProjects: [
+export const RelatedProject = {
+	ProjectsHeading: 'Related Projects',
+	Projects: [
 		{
 			id: 1,
 			title: 'Mobile UI',

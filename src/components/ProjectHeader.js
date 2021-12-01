@@ -1,10 +1,10 @@
-import { singleProjectHeader } from '../utils/SingleProjectData';
+import { ProjectHeader } from '../utils/SingleProjectData';
 
 const ProjectSingleHeader = () => {
 	return (
 		<div>
 			<p className="text-left text-3xl sm:text-4xl font-bold text-primary-dark dark:text-primary-light mt-7 sm:mt-20 mb-7">
-				{singleProjectHeader.title}
+				{ProjectHeader.title}
 			</p>
 			<div className="flex">
 				<div className="flex items-center mr-10">
@@ -13,7 +13,7 @@ const ProjectSingleHeader = () => {
 						className="w-4 h-4 text-ternary-dark dark:text-ternary-light"
 					></i>
 					<span className="ml-2 leading-none text-primary-dark dark:text-primary-light">
-						{singleProjectHeader.publishDate}
+						{ProjectHeader.publishDate}
 					</span>
 				</div>
 				<div className="flex items-center">
@@ -22,7 +22,7 @@ const ProjectSingleHeader = () => {
 						className="w-4 h-4 text-ternary-dark dark:text-ternary-light"
 					></i>
 					<span className="ml-2 leading-none text-primary-dark dark:text-primary-light">
-						{singleProjectHeader.tags}
+						{ProjectHeader.tags}
 					</span>
 				</div>
 			</div>
