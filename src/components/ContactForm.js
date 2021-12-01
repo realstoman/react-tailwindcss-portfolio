@@ -6,7 +6,7 @@ const ContactForm = () => {
 					onSubmit={(e) => {
 						e.preventDefault();
 					}}
-					className="max-w-xl m-4 p-6 sm:p-10 bg-secondary-light dark:bg-secondary-dark rounded-xl shadow-xl text-left"
+					className="max-w-xl m-4 p-6 sm:p-10 bg-secondary-light dark:bg-secondary-dark rounded-lg shadow-xl text-left"
 				>
 					<p className="text-primary-dark dark:text-primary-light text-2xl font-semibold mb-8">
 						Contact Form
@@ -82,7 +82,7 @@ const ContactForm = () => {
 
 					<div className="mt-6">
 						<button
-							className="px-4 py-2.5 text-white font-medium tracking-wider bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 rounded-lg"
+							className="px-4 py-2.5 text-white font-medium tracking-wider bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 rounded-md"
 							type="submit"
 							aria-label="Send Message"
 						>

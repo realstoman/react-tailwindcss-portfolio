@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { ProjectInfo as ProjectsData } from '../utils/SingleProjectData';
 
 const ProjectInfo = () => {
@@ -66,15 +67,17 @@ const ProjectInfo = () => {
 					<div className="flex items-center gap-3 mt-5">
 						{ProjectsData.SocialSharing.map((social) => {
 							return (
-								<a
+								<Link
 									key={social.id}
-									href={social.url}
+									to={social.url}
 									target="__blank"
 									aria-label="Share Project"
 									className="bg-ternary-light dark:bg-ternary-dark text-gray-400 hover:text-primary-dark dark:hover:text-primary-light p-2 rounded-lg shadow-sm"
 								>
-									{social.icon}
-								</a>
+									<span className="text-lg lg:text-2xl">
+										{social.icon}
+									</span>
+								</Link>
 							);
 						})}
 					</div>

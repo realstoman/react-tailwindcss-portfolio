@@ -6,7 +6,7 @@ const AboutMeBio = () => {
 		<div className="block sm:flex sm:gap-10 mt-10 sm:mt-20">
 			{/* About me portfolio image start */}
 			<div className="w-full sm:w-1/4 mb-7 sm:mb-0">
-				<img src={profileImage} className="rounded-xl w-96" alt="" />
+				<img src={profileImage} className="rounded-lg w-96" alt="" />
 			</div>
 			{/* About me portfolio image end */}
 

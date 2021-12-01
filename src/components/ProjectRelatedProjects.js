@@ -12,7 +12,7 @@ const ProjectRelatedProjects = () => {
 					return (
 						<img
 							src={project.img}
-							className="rounded-2xl cursor-pointer"
+							className="rounded-xl cursor-pointer"
 							alt={project.title}
 							key={project.id}
 						/>

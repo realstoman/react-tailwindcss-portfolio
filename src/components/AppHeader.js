@@ -181,7 +181,7 @@ const AppHeader = () => {
 						<div>
 							<button
 								onClick={showHireMeModal}
-								className="text-md font-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-lg px-5 py-2.5"
+								className="text-md font-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5"
 								aria-label="Hire Me Button"
 							>
 								Hire Me

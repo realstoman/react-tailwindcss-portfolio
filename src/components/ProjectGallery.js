@@ -8,7 +8,7 @@ const ProjectGallery = () => {
 					<div className="mb-10 sm:mb-0" key={project.id}>
 						<img
 							src={project.img}
-							className="rounded-2xl cursor-pointer shadow-lg sm:shadow-none"
+							className="rounded-xl cursor-pointer shadow-lg sm:shadow-none"
 							alt={project.title}
 							key={project.id}
 						/>
