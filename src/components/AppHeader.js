@@ -5,12 +5,28 @@ import useThemeSwitcher from '../hooks/useThemeSwitcher';
 import logoLight from '../images/logo-light.svg';
 import logoDark from '../images/logo-dark.svg';
 import { useState } from 'react';
+import HireMeModal from './HireMeModal';
 
 const AppHeader = () => {
 	const [showMenu, setShowMenu] = useState(false);
+	const [showModal, setShowModal] = useState(false);
 	const [activeTheme, setTheme] = useThemeSwitcher();
 
 	const toggleMenu = showMenu === false ? true : false;
+
+	function showHireMeModal() {
+		if (!showModal) {
+			document
+				.getElementsByTagName('html')[0]
+				.classList.add('overflow-y-hidden');
+			setShowModal(true);
+		} else {
+			document
+				.getElementsByTagName('html')[0]
+				.classList.remove('overflow-y-hidden');
+			setShowModal(false);
+		}
+	}
 
 	return (
 		<div>
@@ -107,6 +123,7 @@ const AppHeader = () => {
 						</Link>
 						<div className="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark">
 							<button
+								onClick={showHireMeModal}
 								className="sm:hidden block text-left text-md font-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-4 py-2 mt-2"
 								aria-label="Hire Me Button"
 							>
@@ -121,6 +138,7 @@ const AppHeader = () => {
 						{/* Hire me button start */}
 						<div>
 							<button
+								onClick={showHireMeModal}
 								className="text-md font-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-lg px-5 py-2.5"
 								aria-label="Hire Me Button"
 							>
@@ -144,6 +162,17 @@ const AppHeader = () => {
 						{/* Theme switcher large screen start */}
 					</div>
 				</div>
+				{/* Hire me modal start */}
+				<div>
+					{showModal ? (
+						<HireMeModal
+							onClose={showHireMeModal}
+							onRequest={showHireMeModal}
+						/>
+					) : null}
+					{showModal ? showHireMeModal : null}
+				</div>
+				{/* Hire me modal end */}
 			</nav>
 		</div>
 	);
