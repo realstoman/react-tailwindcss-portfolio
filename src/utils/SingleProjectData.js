@@ -6,9 +6,9 @@ import Image5 from '../images/web-project-1.jpg';
 import Image6 from '../images/ui-project-2.jpg';
 
 export const singleProjectHeader = {
-	singleProjectTitle: 'Kabul Project Management UI',
-	singleProjectDate: 'Jul 26, 2021',
-	singleProjectTag: 'UI / Frontend',
+	title: 'Project Management UI',
+	publishDate: 'Jul 26, 2021',
+	tags: 'UI / Frontend',
 };
 
 export const projectImages = [

@@ -32,7 +32,7 @@ export const ProjectsData = [
 	},
 	{
 		id: 5,
-		title: 'Kabul Social App',
+		title: 'React Social App',
 		category: 'Mobile Application',
 		img: MobileImage1,
 	},
