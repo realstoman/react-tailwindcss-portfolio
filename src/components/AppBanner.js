@@ -9,10 +9,10 @@ const AppBanner = () => {
 	return (
 		<section className="flex flex-col sm:justify-between items-center sm:flex-row mt-12 sm:mt-2">
 			<div className="w-full sm:w-1/3 text-left">
-				<h1 className="text-3xl sm:text-5xl text-center sm:text-left font-semibold text-ternary-dark dark:text-primary-light uppercase">
+				<h1 className="text-2xl sm:text-3xl lg:text-4xl xl:text-5xl text-center sm:text-left font-semibold text-ternary-dark dark:text-primary-light uppercase">
 					Hi, Iam Stoman
 				</h1>
-				<p className="mt-4 text-2xml sm:text-4xl text-center sm:text-left font-semibold leading-none text-gray-400">
+				<p className="mt-4 text-xl sm:text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left font-semibold leading-none text-gray-400">
 					A Full-Stack Developer & Design Enthusiast
 				</p>
 				<div className="flex justify-center sm:block">
