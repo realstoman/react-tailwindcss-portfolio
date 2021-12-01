@@ -38,7 +38,7 @@ const socialLinks = [
 const AppFooter = () => {
 	return (
 		<div className="container mx-auto">
-			<div className="innercontent pt-20 sm:pt-30 pb-8 mt-20 border-t-2 border-primary-light dark:border-secondary-dark">
+			<div className="pt-20 sm:pt-30 pb-8 mt-20 border-t-2 border-primary-light dark:border-secondary-dark">
 				{/* Footer social links start */}
 				<div className="flex flex-col justify-center items-center mb-12 sm:mb-28">
 					<p className="text-3xl sm:text-4xl font-semibold text-primary-dark dark:text-primary-light mb-5">
@@ -64,8 +64,12 @@ const AppFooter = () => {
 				{/* Footer copyright start */}
 				<div className="flex justify-center items-center text-center">
 					<div className="text-lg text-ternary-dark dark:text-ternary-light">
-						<Link to="https://github.com/NangialaiStoman/react-tailwindcss-portfolio">
-							&copy; 2021. React & TailwindCSS Portfolio
+						&copy; 2021
+						<Link
+							to="https://github.com/NangialaiStoman/react-tailwindcss-portfolio"
+							className="hover:underline ml-1"
+						>
+							React & TailwindCSS Portfolio
 						</Link>
 						.
 						<Link
