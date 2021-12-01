@@ -1,6 +1,8 @@
-const HireMeModal = () => {
+import { FiX } from 'react-icons/fi';
+
+const HireMeModal = ({ onClose, onRequest }) => {
 	return (
-		<div className="fixed inset-0 z-30">
+		<div className="fixed inset-0 z-30 transition-all duration-500">
 			{/* Modal Background */}
 			<div className="bg-filter bg-black bg-opacity-50 fixed inset-0 w-full h-full z-20"></div>
 
@@ -12,15 +14,23 @@ const HireMeModal = () => {
 							<h5 className=" text-primary-dark dark:text-primary-light text-2xl">
 								What project are you looking for?
 							</h5>
-							<button className="px-4 font-bold text-primary-dark dark:text-primary-light">
-								X
+							<button
+								onClick={onClose}
+								className="px-4 font-bold text-primary-dark dark:text-primary-light"
+							>
+								<FiX className="text-3xl" />
 							</button>
 						</div>
 						<div className="modal-body p-5 w-full h-full">
-							<form className="max-w-xl m-4 text-left">
+							<form
+								onSubmit={(e) => {
+									e.preventDefault();
+								}}
+								className="max-w-xl m-4 text-left"
+							>
 								<div className="">
 									<input
-										className="w-full px-5 py-2 border-1 border-gray-200 dark:border-secondary-dark rounded-lg text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
+										className="w-full px-5 py-2 border dark:border-secondary-dark rounded-lg text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
 										id="name"
 										name="name"
 										type="text"
@@ -31,7 +41,7 @@ const HireMeModal = () => {
 								</div>
 								<div className="mt-6">
 									<input
-										className="w-full px-5 py-2 border-1 border-gray-200 dark:border-secondary-dark rounded-lg text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
+										className="w-full px-5 py-2 border dark:border-secondary-dark rounded-lg text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
 										id="email"
 										name="email"
 										type="text"
@@ -42,7 +52,7 @@ const HireMeModal = () => {
 								</div>
 								<div className="mt-6">
 									<select
-										className="w-full px-5 py-2 border-1 border-gray-200 dark:border-secondary-dark rounded-lg text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
+										className="w-full px-5 py-2 border dark:border-secondary-dark rounded-lg text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
 										id="subject"
 										name="subject"
 										type="text"
@@ -55,7 +65,7 @@ const HireMeModal = () => {
 
 								<div className="mt-6">
 									<textarea
-										className="w-full px-5 py-2 border-1 border-gray-200 dark:border-secondary-dark rounded-lg text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
+										className="w-full px-5 py-2 border dark:border-secondary-dark rounded-lg text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
 										id="message"
 										name="message"
 										cols="14"
@@ -67,6 +77,8 @@ const HireMeModal = () => {
 
 								<div className="mt-6 pb-4 sm:pb-1">
 									<button
+										onClick={onRequest}
+										type="submit"
 										className="px-4
 											sm:px-6
 											py-2
@@ -79,7 +91,6 @@ const HireMeModal = () => {
 											rounded-md
 											sm:rounded-lg
 											focus:ring-1 focus:ring-indigo-900"
-										type="submit"
 										aria-label="Submit Request"
 									>
 										Send Request
@@ -89,6 +100,8 @@ const HireMeModal = () => {
 						</div>
 						<div className="modal-footer mt-2 sm:mt-0 py-5 px-8 border0-t text-right">
 							<button
+								onClick={onClose}
+								type="button"
 								className=" px-4
 									sm:px-6
 									py-2

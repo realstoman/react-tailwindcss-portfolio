@@ -1,10 +1,11 @@
 import { FiSearch } from 'react-icons/fi';
+import { ProjectsData } from '../utils/ProjectsData';
 import ProjectsFilter from './ProjectsFilter';
 import ProjectSingle from './ProjectSingle';
 
 const ProjectsGrid = () => {
 	return (
-		<section className="pt-20 sm:pt-28">
+		<section className="py-5 sm:py-10 mt-5 sm:mt-10">
 			{/* Projects grid title start */}
 			<div className="text-center">
 				<p className="text-2xl sm:text-5xl font-semibold mb-3 text-ternary-dark dark:text-ternary-light">
@@ -81,6 +82,7 @@ const ProjectsGrid = () => {
 						/>
 					</div>
 					{/* <ProjectsFilter @change="selectedProject = $event" /> */}
+
 					<ProjectsFilter />
 					{/* <p>Filter projects</p> */}
 				</div>
@@ -94,7 +96,14 @@ const ProjectsGrid = () => {
 				:key="project.id"
 				:project="project"
 			/> */}
-				<ProjectSingle></ProjectSingle>
+				{ProjectsData.map((project) => (
+					<ProjectSingle
+						title={project.title}
+						category={project.category}
+						image={project.img}
+						key={project.id}
+					/>
+				))}
 			</div>
 			{/* Projects grid end */}
 		</section>

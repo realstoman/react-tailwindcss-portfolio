@@ -2,19 +2,24 @@ const ContactForm = () => {
 	return (
 		<div className="w-full sm:w-1/2">
 			<div className="leading-loose">
-				<form className="max-w-xl m-4 p-6 sm:p-10 bg-secondary-light dark:bg-secondary-dark rounded-xl shadow-xl text-left">
+				<form
+					onSubmit={(e) => {
+						e.preventDefault();
+					}}
+					className="max-w-xl m-4 p-6 sm:p-10 bg-secondary-light dark:bg-secondary-dark rounded-xl shadow-xl text-left"
+				>
 					<p className="text-primary-dark dark:text-primary-light text-2xl font-semibold mb-8">
 						Contact Form
 					</p>
 					<div className="">
 						<label
 							className="block text-lg text-primary-dark dark:text-primary-light mb-2"
-							for="name"
+							htmlFor="name"
 						>
 							Full Name
 						</label>
 						<input
-							className="w-full px-5 py-2 border-0 text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md dark:font-medium"
+							className="w-full px-5 py-2 border dark:border-secondary-dark text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md dark:font-medium"
 							id="name"
 							name="name"
 							type="text"
@@ -26,12 +31,12 @@ const ContactForm = () => {
 					<div className="mt-6">
 						<label
 							className="block text-lg text-primary-dark dark:text-primary-light mb-2"
-							for="email"
+							htmlFor="email"
 						>
 							Email
 						</label>
 						<input
-							className="w-full px-5 py-2 border-0 text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md dark:font-medium"
+							className="w-full px-5 py-2 border dark:border-secondary-dark text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md dark:font-medium"
 							id="email"
 							name="email"
 							type="text"
@@ -43,12 +48,12 @@ const ContactForm = () => {
 					<div className="mt-6">
 						<label
 							className="block text-lg text-primary-dark dark:text-primary-light mb-2"
-							for="subject"
+							htmlFor="subject"
 						>
 							Subject
 						</label>
 						<input
-							className="w-full px-5 py-2 border-0 text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md dark:font-medium"
+							className="w-full px-5 py-2 border dark:border-secondary-dark text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md dark:font-medium"
 							id="subject"
 							name="subject"
 							type="text"
@@ -61,12 +66,12 @@ const ContactForm = () => {
 					<div className="mt-6">
 						<label
 							className="block text-lg text-primary-dark dark:text-primary-light mb-2"
-							for="message"
+							htmlFor="message"
 						>
 							Message
 						</label>
 						<textarea
-							className="w-full px-5 py-2 border-0 text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md dark:font-medium"
+							className="w-full px-5 py-2 border dark:border-secondary-dark text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md dark:font-medium"
 							id="message"
 							name="message"
 							cols="14"

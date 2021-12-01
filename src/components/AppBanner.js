@@ -1,10 +1,10 @@
-import ThemeSwitcher from '../hooks/ThemeSwitcher';
+import useThemeSwitcher from '../hooks/useThemeSwitcher';
 import { FiArrowDownCircle } from 'react-icons/fi';
 import developerLight from '../images/developer.svg';
 import developerDark from '../images/developer-dark.svg';
 
 const AppBanner = () => {
-	const [activeTheme, seTheme] = ThemeSwitcher();
+	const [activeTheme] = useThemeSwitcher();
 
 	return (
 		<section className="flex flex-col sm:justify-between items-center sm:flex-row mt-12 sm:mt-2">
@@ -30,7 +30,7 @@ const AppBanner = () => {
 			<div className="w-full sm:w-2/3 text-right float-right mt-8 sm:mt-0">
 				<img
 					src={
-						activeTheme === 'dark' ? developerDark : developerLight
+						activeTheme === 'dark' ? developerLight : developerDark
 					}
 					alt="Developer"
 				/>
