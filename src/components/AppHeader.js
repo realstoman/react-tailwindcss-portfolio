@@ -33,7 +33,19 @@ const AppHeader = () => {
 							</Link>
 						</div>
 
-						{/* Theme switcher small screen */}
+						{/* Theme switcher small screen start */}
+						<div
+							onClick={() => setTheme(activeTheme)}
+							aria-label="Theme Switcher"
+							className="block sm:hidden ml-0 bg-primary-light dark:bg-ternary-dark p-3 shadow-sm rounded-xl cursor-pointer"
+						>
+							{activeTheme === 'dark' ? (
+								<FiMoon className="text-liText-ternary-dark hover:text-gray-400 dark:text-liText-ternary-light dark:hover:text-liBorder-primary-light text-xl" />
+							) : (
+								<FiSun className="text-gray-200 hover:text-gray-50 text-xl" />
+							)}
+						</div>
+						{/* Theme switcher small screen end */}
 
 						{/* Small screen hamburger menu start */}
 						<div className="sm:hidden">
@@ -112,7 +124,7 @@ const AppHeader = () => {
 						</div>
 						{/* Hire me button end */}
 
-						{/* Theme switcher large screen */}
+						{/* Theme switcher large screen start */}
 						<div
 							onClick={() => setTheme(activeTheme)}
 							aria-label="Theme Switcher"
@@ -124,6 +136,7 @@ const AppHeader = () => {
 								<FiSun className="text-gray-200 hover:text-gray-50 text-xl" />
 							)}
 						</div>
+						{/* Theme switcher large screen start */}
 					</div>
 				</div>
 			</nav>
