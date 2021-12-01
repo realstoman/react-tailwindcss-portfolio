@@ -1,12 +1,12 @@
 import { FiMoon, FiSun } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
-import ThemeSwitcher from '../hooks/ThemeSwitcher';
+import useThemeSwitcher from '../hooks/useThemeSwitcher';
 
 import logoLight from '../images/logo-light.svg';
 import logoDark from '../images/logo-dark.svg';
 
 const AppHeader = () => {
-	const [activeTheme, setTheme] = ThemeSwitcher();
+	const [activeTheme, setTheme] = useThemeSwitcher();
 
 	return (
 		<div>

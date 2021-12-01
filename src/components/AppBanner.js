@@ -1,10 +1,10 @@
-import ThemeSwitcher from '../hooks/ThemeSwitcher';
+import useThemeSwitcher from '../hooks/useThemeSwitcher';
 import { FiArrowDownCircle } from 'react-icons/fi';
 import developerLight from '../images/developer.svg';
 import developerDark from '../images/developer-dark.svg';
 
 const AppBanner = () => {
-	const [activeTheme, seTheme] = ThemeSwitcher();
+	const [activeTheme, seTheme] = useThemeSwitcher();
 
 	return (
 		<section className="flex flex-col sm:justify-between items-center sm:flex-row mt-12 sm:mt-2">
