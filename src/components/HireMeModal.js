@@ -91,7 +91,6 @@ const HireMeModal = ({ onClose, onRequest }) => {
 											rounded-md
 											sm:rounded-lg
 											focus:ring-1 focus:ring-indigo-900"
-										type="button"
 										aria-label="Submit Request"
 									>
 										Send Request
