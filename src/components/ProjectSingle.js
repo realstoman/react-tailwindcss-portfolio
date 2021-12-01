@@ -4,13 +4,13 @@ const ProjectSingle = ({ title, category, image }) => {
 	return (
 		<Link
 			to="/projects/single-project"
-			className="rounded-3xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark"
+			className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark"
 			aria-label="Single Project"
 		>
 			<div>
 				<img
 					src={image}
-					className="rounded-t-3xl border-none"
+					className="rounded-t-xl border-none"
 					alt="Single Project"
 				/>
 			</div>

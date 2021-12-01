@@ -9,7 +9,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 			{/* Modal Content */}
 			<main className="flex flex-col items-center justify-center h-full w-full">
 				<div className="modal-wrapper flex items-center z-30">
-					<div className="modal max-w-md mx-5 xl:max-w-xl lg:max-w-xl md:max-w-xl bg-secondary-light dark:bg-primary-dark max-h-screen shadow-lg flex-row rounded-xl relative">
+					<div className="modal max-w-md mx-5 xl:max-w-xl lg:max-w-xl md:max-w-xl bg-secondary-light dark:bg-primary-dark max-h-screen shadow-lg flex-row rounded-lg relative">
 						<div className="modal-header flex justify-between gap-10 p-5 border-b border-ternary-light dark:border-ternary-dark">
 							<h5 className=" text-primary-dark dark:text-primary-light text-2xl">
 								What project are you looking for?
@@ -30,7 +30,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 							>
 								<div className="">
 									<input
-										className="w-full px-5 py-2 border dark:border-secondary-dark rounded-lg text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
+										className="w-full px-5 py-2 border dark:border-secondary-dark rounded-md text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
 										id="name"
 										name="name"
 										type="text"
@@ -41,7 +41,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 								</div>
 								<div className="mt-6">
 									<input
-										className="w-full px-5 py-2 border dark:border-secondary-dark rounded-lg text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
+										className="w-full px-5 py-2 border dark:border-secondary-dark rounded-md text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
 										id="email"
 										name="email"
 										type="text"
@@ -52,7 +52,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 								</div>
 								<div className="mt-6">
 									<select
-										className="w-full px-5 py-2 border dark:border-secondary-dark rounded-lg text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
+										className="w-full px-5 py-2 border dark:border-secondary-dark rounded-md text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
 										id="subject"
 										name="subject"
 										type="text"
@@ -65,7 +65,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 
 								<div className="mt-6">
 									<textarea
-										className="w-full px-5 py-2 border dark:border-secondary-dark rounded-lg text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
+										className="w-full px-5 py-2 border dark:border-secondary-dark rounded-md text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
 										id="message"
 										name="message"
 										cols="14"
@@ -89,7 +89,6 @@ const HireMeModal = ({ onClose, onRequest }) => {
 											bg-indigo-500
 											hover:bg-indigo-600
 											rounded-md
-											sm:rounded-lg
 											focus:ring-1 focus:ring-indigo-900"
 										aria-label="Submit Request"
 									>
@@ -108,7 +107,6 @@ const HireMeModal = ({ onClose, onRequest }) => {
 									bg-indigo-400
 									hover:bg-indigo-500
 									rounded-md
-									sm:rounded-lg
 									font-normal
 									sm:font-bold
 									text-primary-light
