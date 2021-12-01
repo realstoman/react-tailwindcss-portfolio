@@ -134,7 +134,7 @@ export const ProjectInfo = {
 };
 
 export const RelatedProject = {
-	ProjectsHeading: 'Related Projects',
+	title: 'Related Projects',
 	Projects: [
 		{
 			id: 1,
