@@ -2,7 +2,12 @@ const ContactForm = () => {
 	return (
 		<div className="w-full sm:w-1/2">
 			<div className="leading-loose">
-				<form className="max-w-xl m-4 p-6 sm:p-10 bg-secondary-light dark:bg-secondary-dark rounded-xl shadow-xl text-left">
+				<form
+					onSubmit={(e) => {
+						e.preventDefault();
+					}}
+					className="max-w-xl m-4 p-6 sm:p-10 bg-secondary-light dark:bg-secondary-dark rounded-xl shadow-xl text-left"
+				>
 					<p className="text-primary-dark dark:text-primary-light text-2xl font-semibold mb-8">
 						Contact Form
 					</p>

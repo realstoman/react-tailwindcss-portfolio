@@ -22,7 +22,12 @@ const HireMeModal = ({ onClose, onRequest }) => {
 							</button>
 						</div>
 						<div className="modal-body p-5 w-full h-full">
-							<form className="max-w-xl m-4 text-left">
+							<form
+								onSubmit={(e) => {
+									e.preventDefault();
+								}}
+								className="max-w-xl m-4 text-left"
+							>
 								<div className="">
 									<input
 										className="w-full px-5 py-2 border dark:border-secondary-dark rounded-lg text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
@@ -73,6 +78,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 								<div className="mt-6 pb-4 sm:pb-1">
 									<button
 										onClick={onRequest}
+										type="submit"
 										className="px-4
 											sm:px-6
 											py-2
