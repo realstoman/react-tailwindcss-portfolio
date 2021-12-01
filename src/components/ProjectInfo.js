@@ -17,12 +17,12 @@ const ProjectInfo = () => {
 									<a
 										href="https://stoman.me"
 										className={
-											info.title == 'Website' ||
-											info.title == 'Phone'
+											info.title === 'Website' ||
+											info.title === 'Phone'
 												? 'hover:underline cursor-pointer'
 												: ''
 										}
-										aria-label="Project Webiste and Phone"
+										aria-label="Project Website and Phone"
 									>
 										{info.details}
 									</a>
