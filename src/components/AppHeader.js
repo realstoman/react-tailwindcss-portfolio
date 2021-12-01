@@ -1,4 +1,4 @@
-import { FiMoon, FiSun } from 'react-icons/fi';
+import { FiMenu, FiMoon, FiSun, FiX } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import useThemeSwitcher from '../hooks/useThemeSwitcher';
 
@@ -12,7 +12,13 @@ const AppHeader = () => {
 	const [showModal, setShowModal] = useState(false);
 	const [activeTheme, setTheme] = useThemeSwitcher();
 
-	const toggleMenu = showMenu === false ? true : false;
+	function toggleMenu() {
+		if (!showMenu) {
+			setShowMenu(true);
+		} else {
+			setShowMenu(false);
+		}
+	}
 
 	function showHireMeModal() {
 		if (!showModal) {
@@ -72,7 +78,7 @@ const AppHeader = () => {
 						{/* Small screen hamburger menu start */}
 						<div className="sm:hidden">
 							<button
-								onClick={() => setShowMenu(toggleMenu)}
+								onClick={toggleMenu}
 								type="button"
 								className="focus:outline-none"
 								aria-label="Hamburger Menu"
@@ -82,15 +88,11 @@ const AppHeader = () => {
 									viewBox="0 0 24 24"
 									className="h-7 w-7 fill-current text-secondary-dark dark:text-ternary-light"
 								>
-									<path
-										fill-rule="evenodd"
-										d="M18.278 16.864a1 1 0 0 1-1.414 1.414l-4.829-4.828-4.828 4.828a1 1 0 0 1-1.414-1.414l4.828-4.829-4.828-4.828a1 1 0 0 1 1.414-1.414l4.829 4.828 4.828-4.828a1 1 0 1 1 1.414 1.414l-4.828 4.829 4.828 4.828z"
-										clip-rule="evenodd"
-									></path>
-									<path
-										fill-rule="evenodd"
-										d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-									></path>
+									{showMenu ? (
+										<FiX className="text-3xl" />
+									) : (
+										<FiMenu className="text-3xl" />
+									)}
 								</svg>
 							</button>
 						</div>
@@ -99,7 +101,7 @@ const AppHeader = () => {
 					{/* Header menu links and small screen hamburger menu end */}
 
 					{/* Header links start*/}
-					<div className="m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none">
+					<div className="hidden m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none">
 						<Link
 							to="/projects"
 							className="block text-left text-lg font-medium text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
