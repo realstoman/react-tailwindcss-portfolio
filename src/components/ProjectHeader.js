@@ -1,3 +1,4 @@
+import { FiClock, FiTag } from 'react-icons/fi';
 import { ProjectHeader } from '../utils/SingleProjectData';
 
 const ProjectSingleHeader = () => {
@@ -8,19 +9,13 @@ const ProjectSingleHeader = () => {
 			</p>
 			<div className="flex">
 				<div className="flex items-center mr-10">
-					<i
-						data-feather="clock"
-						className="w-4 h-4 text-ternary-dark dark:text-ternary-light"
-					></i>
+					<FiClock className="text-xl text-ternary-dark dark:text-ternary-light" />
 					<span className="ml-2 leading-none text-primary-dark dark:text-primary-light">
 						{ProjectHeader.publishDate}
 					</span>
 				</div>
 				<div className="flex items-center">
-					<i
-						data-feather="tag"
-						className="w-4 h-4 text-ternary-dark dark:text-ternary-light"
-					></i>
+					<FiTag className="w-4 h-4 text-ternary-dark dark:text-ternary-light" />
 					<span className="ml-2 leading-none text-primary-dark dark:text-primary-light">
 						{ProjectHeader.tags}
 					</span>
