@@ -14,7 +14,7 @@ const ContactForm = () => {
 							Full Name
 						</label>
 						<input
-							className="w-full px-5 py-2 border-0 text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md dark:font-medium"
+							className="w-full px-5 py-2 border dark:border-secondary-dark text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md dark:font-medium"
 							id="name"
 							name="name"
 							type="text"
@@ -31,7 +31,7 @@ const ContactForm = () => {
 							Email
 						</label>
 						<input
-							className="w-full px-5 py-2 border-0 text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md dark:font-medium"
+							className="w-full px-5 py-2 border dark:border-secondary-dark text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md dark:font-medium"
 							id="email"
 							name="email"
 							type="text"
@@ -48,7 +48,7 @@ const ContactForm = () => {
 							Subject
 						</label>
 						<input
-							className="w-full px-5 py-2 border-0 text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md dark:font-medium"
+							className="w-full px-5 py-2 border dark:border-secondary-dark text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md dark:font-medium"
 							id="subject"
 							name="subject"
 							type="text"
@@ -66,7 +66,7 @@ const ContactForm = () => {
 							Message
 						</label>
 						<textarea
-							className="w-full px-5 py-2 border-0 text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md dark:font-medium"
+							className="w-full px-5 py-2 border dark:border-secondary-dark text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md dark:font-medium"
 							id="message"
 							name="message"
 							cols="14"
