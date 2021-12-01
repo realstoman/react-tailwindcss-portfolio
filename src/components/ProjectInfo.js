@@ -12,7 +12,10 @@ const ProjectInfo = () => {
 					<ul className="leading-loose">
 						{ProjectsData.CompanyInfo.map((info) => {
 							return (
-								<li className="text-ternary-dark dark:text-ternary-light">
+								<li
+									className="text-ternary-dark dark:text-ternary-light"
+									key={info.id}
+								>
 									<span>{info.title}: </span>
 									<a
 										href="https://stoman.me"

@@ -5,13 +5,13 @@ const AboutMeBio = () => {
 	return (
 		<div className="block sm:flex sm:gap-10 mt-10 sm:mt-20">
 			{/* About me portfolio image start */}
-			<div class="w-full sm:w-1/4 mb-7 sm:mb-0">
-				<img src={profileImage} class="rounded-xl w-96" alt="" />
+			<div className="w-full sm:w-1/4 mb-7 sm:mb-0">
+				<img src={profileImage} className="rounded-xl w-96" alt="" />
 			</div>
 			{/* About me portfolio image end */}
 
 			{/* About me details start */}
-			<div class="w-full sm:w-3/4 text-left">
+			<div className="w-full sm:w-3/4 text-left">
 				{AboutMeData.map((bio) => (
 					<p
 						className="mb-4 text-ternary-dark dark:text-ternary-light text-lg"

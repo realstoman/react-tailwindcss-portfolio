@@ -45,7 +45,7 @@ export const ClientsData = [
 		img: CanonImage,
 	},
 	{
-		id: 7,
+		id: 8,
 		title: 'PUMA',
 		img: PumaImage,
 	},
