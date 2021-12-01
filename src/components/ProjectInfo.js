@@ -11,21 +11,23 @@ const ProjectInfo = () => {
 					</p>
 					<ul className="leading-loose">
 						{ProjectsData.CompanyInfo.map((info) => {
-							<li className="text-ternary-dark dark:text-ternary-light">
-								<span>{info.title}: </span>
-								<a
-									href="#"
-									className={
-										info.title == 'Website' ||
-										info.title == 'Phone'
-											? 'hover:underline cursor-pointer'
-											: ''
-									}
-									aria-label="Project Webiste and Phone"
-								>
-									{info.details}
-								</a>
-							</li>;
+							return (
+								<li className="text-ternary-dark dark:text-ternary-light">
+									<span>{info.title}: </span>
+									<a
+										href="https://stoman.me"
+										className={
+											info.title == 'Website' ||
+											info.title == 'Phone'
+												? 'hover:underline cursor-pointer'
+												: ''
+										}
+										aria-label="Project Webiste and Phone"
+									>
+										{info.details}
+									</a>
+								</li>
+							);
 						})}
 					</ul>
 				</div>
