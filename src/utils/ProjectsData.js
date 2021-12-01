@@ -5,7 +5,7 @@ import MobileImage2 from '../images/mobile-project-2.jpg';
 import UIImage1 from '../images/ui-project-1.jpg';
 import UIImage2 from '../images/ui-project-2.jpg';
 
-export const Projects = [
+export const ProjectsData = [
 	{
 		id: 1,
 		title: 'Google Health Platform',
@@ -43,10 +43,3 @@ export const Projects = [
 		img: WebImage1,
 	},
 ];
-
-export const ProjectsData = {
-	projectsHeading: 'Projects Portfolio',
-	projectsDescription: 'Some of the projects I have successfully completed',
-	selectedProject: '',
-	searchProject: '',
-};
