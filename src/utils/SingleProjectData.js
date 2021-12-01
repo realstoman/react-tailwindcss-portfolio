@@ -4,6 +4,14 @@ import Image3 from '../images/mobile-project-2.jpg';
 import Image4 from '../images/mobile-project-1.jpg';
 import Image5 from '../images/web-project-1.jpg';
 import Image6 from '../images/ui-project-2.jpg';
+import {
+	FiDribbble,
+	FiFacebook,
+	FiInstagram,
+	FiLinkedin,
+	FiTwitter,
+	FiYoutube,
+} from 'react-icons/fi';
 
 export const ProjectHeader = {
 	title: 'Project Management UI',
@@ -92,42 +100,42 @@ export const ProjectInfo = {
 				'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
 		},
 	],
-	SocialSharingsHeading: 'Share This',
-	SocialSharings: [
+	SocialSharingHeading: 'Share This',
+	SocialSharing: [
 		{
 			id: 1,
 			name: 'Twitter',
-			icon: 'twitter',
+			icon: <FiTwitter />,
 			url: 'https://twitter.com/NangialaiStoman',
 		},
 		{
 			id: 2,
 			name: 'Instagram',
-			icon: 'instagram',
+			icon: <FiInstagram />,
 			url: 'https://instagram.com/NangialaiStoman',
 		},
 		{
 			id: 3,
 			name: 'Facebook',
-			icon: 'facebook',
+			icon: <FiFacebook />,
 			url: 'https://facebook.com/',
 		},
 		{
 			id: 4,
 			name: 'LinkedIn',
-			icon: 'linkedin',
+			icon: <FiLinkedin />,
 			url: 'https://linkedin.com/',
 		},
 		{
 			id: 5,
 			name: 'Youtube',
-			icon: 'youtube',
+			icon: <FiYoutube />,
 			url: 'https://www.youtube.com/c/StomanStudio',
 		},
 		{
 			id: 5,
 			name: 'Dribbble',
-			icon: 'dribbble',
+			icon: <FiDribbble />,
 			url: 'https://www.dribbble.com/',
 		},
 	],
