@@ -94,7 +94,7 @@ const ProjectsGrid = () => {
 				:key="project.id"
 				:project="project"
 			/> */}
-				<ProjectSingle></ProjectSingle>
+				<ProjectSingle />
 			</div>
 			{/* Projects grid end */}
 		</section>
