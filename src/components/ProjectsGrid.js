@@ -4,6 +4,31 @@ import ProjectsFilter from './ProjectsFilter';
 import ProjectSingle from './ProjectSingle';
 
 const ProjectsGrid = () => {
+	const selectedProject = '';
+	const searchProject = '';
+
+	const filteredProjects = () => {
+		if (selectedProject) {
+			return filterProjectsByCategory();
+		} else if (searchProject) {
+			return filterProjectsBySearch();
+		}
+		return ProjectsData;
+	};
+
+	const filterProjectsByCategory = () => {
+		return ProjectsData.filter((item) => {
+			let category =
+				item.category.charAt(0).toUpperCase() + item.category.slice(1);
+			return category.includes(selectedProject);
+		});
+	};
+
+	const filterProjectsBySearch = () => {
+		let project = new RegExp(searchProject, 'i');
+		return ProjectsData.filter((el) => el.title.match(project));
+	};
+
 	return (
 		<section className="py-5 sm:py-10 mt-5 sm:mt-10">
 			{/* Projects grid title start */}
@@ -92,11 +117,6 @@ const ProjectsGrid = () => {
 
 			{/* Projects grid start */}
 			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
-				{/* <ProjectSingle
-				v-for="project in filteredProjects"
-				:key="project.id"
-				:project="project"
-			/> */}
 				{ProjectsData.map((project) => (
 					<ProjectSingle
 						title={project.title}

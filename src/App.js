@@ -7,11 +7,13 @@ import About from './pages/AboutMe';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import ProjectSingle from './pages/ProjectSingle';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
 	return (
 		<div className=" bg-secondary-light dark:bg-primary-dark transition duration-300">
 			<Router>
+				<ScrollToTop />
 				<AppHeader></AppHeader>
 				<Routes>
 					<Route path="/" element={<Home />} />
