@@ -1,12 +1,17 @@
 import { Link } from 'react-router-dom';
 import AppBanner from '../components/AppBanner';
 import ProjectsGrid from '../components/ProjectsGrid';
+import { ProjectsProvider } from '../store/ProjectsContext';
 
 const Home = () => {
 	return (
 		<div className="container mx-auto">
 			<AppBanner></AppBanner>
-			<ProjectsGrid></ProjectsGrid>
+
+			<ProjectsProvider>
+				<ProjectsGrid></ProjectsGrid>
+			</ProjectsProvider>
+
 			<div class="mt-10 sm:mt-15 flex justify-center">
 				<Link
 					to="/projects"
