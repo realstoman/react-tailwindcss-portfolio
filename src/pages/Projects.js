@@ -1,10 +1,13 @@
 import ProjectsGrid from '../components/ProjectsGrid';
+import { ProjectsProvider } from '../store/ProjectsContext';
 
 const Projects = () => {
 	return (
-		<div className="container mx-auto">
-			<ProjectsGrid />
-		</div>
+		<ProjectsProvider>
+			<div className="container mx-auto">
+				<ProjectsGrid />
+			</div>
+		</ProjectsProvider>
 	);
 };
 

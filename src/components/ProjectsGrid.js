@@ -1,33 +1,37 @@
-import { FiSearch } from 'react-icons/fi';
-import { ProjectsData } from '../utils/ProjectsData';
-import ProjectsFilter from './ProjectsFilter';
+import { useContext } from 'react';
 import ProjectSingle from './ProjectSingle';
+import { FiSearch } from 'react-icons/fi';
+import { ProjectsContext } from '../store/ProjectsContext';
+// import { ProjectsData } from '../utils/ProjectsData';
+import ProjectsFilter from './ProjectsFilter';
 
 const ProjectsGrid = () => {
-	const selectedProject = '';
-	const searchProject = '';
+	const [projects, setProjects] = useContext(ProjectsContext);
 
-	const filteredProjects = () => {
-		if (selectedProject) {
-			return filterProjectsByCategory();
-		} else if (searchProject) {
-			return filterProjectsBySearch();
-		}
-		return ProjectsData;
-	};
+	// const selectedProject = '';
+	// const searchProject = '';
 
-	const filterProjectsByCategory = () => {
-		return ProjectsData.filter((item) => {
-			let category =
-				item.category.charAt(0).toUpperCase() + item.category.slice(1);
-			return category.includes(selectedProject);
-		});
-	};
+	// const filteredProjects = () => {
+	// 	if (selectedProject) {
+	// 		return filterProjectsByCategory();
+	// 	} else if (searchProject) {
+	// 		return filterProjectsBySearch();
+	// 	}
+	// 	return ProjectsData;
+	// };
 
-	const filterProjectsBySearch = () => {
-		let project = new RegExp(searchProject, 'i');
-		return ProjectsData.filter((el) => el.title.match(project));
-	};
+	// const filterProjectsByCategory = () => {
+	// 	return ProjectsData.filter((item) => {
+	// 		let category =
+	// 			item.category.charAt(0).toUpperCase() + item.category.slice(1);
+	// 		return category.includes(selectedProject);
+	// 	});
+	// };
+
+	// const filterProjectsBySearch = () => {
+	// 	let project = new RegExp(searchProject, 'i');
+	// 	return ProjectsData.filter((el) => el.title.match(project));
+	// };
 
 	return (
 		<section className="py-5 sm:py-10 mt-5 sm:mt-10">
@@ -117,7 +121,7 @@ const ProjectsGrid = () => {
 
 			{/* Projects grid start */}
 			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
-				{ProjectsData.map((project) => (
+				{projects.map((project) => (
 					<ProjectSingle
 						title={project.title}
 						category={project.category}
