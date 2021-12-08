@@ -1,7 +1,10 @@
 import profileImage from '../../images/profile.jpeg';
-import { AboutMeData } from '../../utils/AboutMeData';
+import { useContext } from 'react';
+import AboutMeContext from '../../context/AboutMeContext';
 
 const AboutMeBio = () => {
+	const { aboutMe } = useContext(AboutMeContext);
+
 	return (
 		<div className="block sm:flex sm:gap-10 mt-10 sm:mt-20">
 			{/* About me portfolio image start */}
@@ -12,7 +15,7 @@ const AboutMeBio = () => {
 
 			{/* About me details start */}
 			<div className="w-full sm:w-3/4 text-left">
-				{AboutMeData.map((bio) => (
+				{aboutMe.map((bio) => (
 					<p
 						className="mb-4 text-ternary-dark dark:text-ternary-light text-lg"
 						key={bio.id}

@@ -1,38 +1,43 @@
+import { useContext } from 'react';
 import { Link } from 'react-router-dom';
-import { ProjectInfo as ProjectsData } from '../../utils/SingleProjectData';
+import SingleProjectContext from '../../context/SingleProjectContext';
 
 const ProjectInfo = () => {
+	const { singleProjectData } = useContext(SingleProjectContext);
+
 	return (
 		<div className="block sm:flex gap-0 sm:gap-10 mt-14">
 			<div className="w-full sm:w-1/3 text-left">
 				{/* Single project client details start */}
 				<div className="mb-7">
 					<p className="text-2xl font-semibold text-secondary-dark dark:text-secondary-light mb-2">
-						{ProjectsData.ClientHeading}
+						{singleProjectData.ProjectInfo.ClientHeading}
 					</p>
 					<ul className="leading-loose">
-						{ProjectsData.CompanyInfo.map((info) => {
-							return (
-								<li
-									className="text-ternary-dark dark:text-ternary-light"
-									key={info.id}
-								>
-									<span>{info.title}: </span>
-									<a
-										href="https://stoman.me"
-										className={
-											info.title === 'Website' ||
-											info.title === 'Phone'
-												? 'hover:underline cursor-pointer'
-												: ''
-										}
-										aria-label="Project Website and Phone"
+						{singleProjectData.ProjectInfo.CompanyInfo.map(
+							(info) => {
+								return (
+									<li
+										className="text-ternary-dark dark:text-ternary-light"
+										key={info.id}
 									>
-										{info.details}
-									</a>
-								</li>
-							);
-						})}
+										<span>{info.title}: </span>
+										<a
+											href="https://stoman.me"
+											className={
+												info.title === 'Website' ||
+												info.title === 'Phone'
+													? 'hover:underline cursor-pointer'
+													: ''
+											}
+											aria-label="Project Website and Phone"
+										>
+											{info.details}
+										</a>
+									</li>
+								);
+							}
+						)}
 					</ul>
 				</div>
 				{/* Single project client details end */}
@@ -40,10 +45,10 @@ const ProjectInfo = () => {
 				{/* Single project objectives start */}
 				<div className="mb-7">
 					<p className="text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2">
-						{ProjectsData.ObjectivesHeading}
+						{singleProjectData.ProjectInfo.ObjectivesHeading}
 					</p>
 					<p className="text-primary-dark dark:text-ternary-light">
-						{ProjectsData.ObjectivesDetails}
+						{singleProjectData.ProjectInfo.ObjectivesDetails}
 					</p>
 				</div>
 				{/* Single project objectives end */}
@@ -51,10 +56,12 @@ const ProjectInfo = () => {
 				{/* Single project technologies start */}
 				<div className="mb-7">
 					<p className="text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2">
-						{ProjectsData.Technologies[0].title}
+						{singleProjectData.ProjectInfo.Technologies[0].title}
 					</p>
 					<p className="text-primary-dark dark:text-ternary-light">
-						{ProjectsData.Technologies[0].techs.join(', ')}
+						{singleProjectData.ProjectInfo.Technologies[0].techs.join(
+							', '
+						)}
 					</p>
 				</div>
 				{/* Single project technologies end */}
@@ -62,24 +69,26 @@ const ProjectInfo = () => {
 				{/* Single project social sharing start */}
 				<div>
 					<p className="text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2">
-						{ProjectsData.SocialSharingHeading}
+						{singleProjectData.ProjectInfo.SocialSharingHeading}
 					</p>
 					<div className="flex items-center gap-3 mt-5">
-						{ProjectsData.SocialSharing.map((social) => {
-							return (
-								<Link
-									key={social.id}
-									to={social.url}
-									target="__blank"
-									aria-label="Share Project"
-									className="bg-ternary-light dark:bg-ternary-dark text-gray-400 hover:text-primary-dark dark:hover:text-primary-light p-2 rounded-lg shadow-sm"
-								>
-									<span className="text-lg lg:text-2xl">
-										{social.icon}
-									</span>
-								</Link>
-							);
-						})}
+						{singleProjectData.ProjectInfo.SocialSharing.map(
+							(social) => {
+								return (
+									<Link
+										key={social.id}
+										to={social.url}
+										target="__blank"
+										aria-label="Share Project"
+										className="bg-ternary-light dark:bg-ternary-dark text-gray-400 hover:text-primary-dark dark:hover:text-primary-light p-2 rounded-lg shadow-sm"
+									>
+										<span className="text-lg lg:text-2xl">
+											{social.icon}
+										</span>
+									</Link>
+								);
+							}
+						)}
 					</div>
 				</div>
 				{/* Single project social sharing end */}
@@ -89,9 +98,9 @@ const ProjectInfo = () => {
 			{/*  Single project right section details start */}
 			<div className="w-full sm:w-2/3 text-left mt-10 sm:mt-0">
 				<p className="text-primary-dark dark:text-primary-light text-2xl font-bold mb-7">
-					{ProjectsData.ProjectDetailsHeading}
+					{singleProjectData.ProjectInfo.ProjectDetailsHeading}
 				</p>
-				{ProjectsData.ProjectDetails.map((details) => {
+				{singleProjectData.ProjectInfo.ProjectDetails.map((details) => {
 					return (
 						<p
 							key={details.id}

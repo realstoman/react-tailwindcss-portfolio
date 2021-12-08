@@ -1,10 +1,11 @@
 import AboutMeBio from '../components/about/AboutMeBio';
 import AboutCounter from '../components/about/AboutCounter';
 import AboutClients from '../components/about/AboutClients.js';
+import { AboutMeProvider } from '../context/AboutMeContext';
 
 const About = () => {
 	return (
-		<div>
+		<AboutMeProvider>
 			<div className="container mx-auto">
 				<AboutMeBio />
 			</div>
@@ -15,7 +16,7 @@ const About = () => {
 			<div className="container mx-auto">
 				<AboutClients />
 			</div>
-		</div>
+		</AboutMeProvider>
 	);
 };
 

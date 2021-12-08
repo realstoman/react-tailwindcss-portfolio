@@ -2,17 +2,17 @@ import ProjectGallery from '../components/projects/ProjectGallery';
 import ProjectHeader from '../components/projects//ProjectHeader';
 import ProjectInfo from '../components/projects/ProjectInfo';
 import ProjectRelatedProjects from '../components/projects/ProjectRelatedProjects';
-import { ProjectsProvider } from '../context/ProjectsContext';
+import { SingleProjectProvider } from '../context/SingleProjectContext';
 
 const ProjectSingle = () => {
 	return (
 		<div className="container mx-auto mt-5 sm:mt-10">
-			<ProjectsProvider>
+			<SingleProjectProvider>
 				<ProjectHeader />
 				<ProjectGallery />
 				<ProjectInfo />
 				<ProjectRelatedProjects />
-			</ProjectsProvider>
+			</SingleProjectProvider>
 		</div>
 	);
 };
