@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ProjectInfo as ProjectsData } from '../utils/SingleProjectData';
+import { ProjectInfo as ProjectsData } from '../../utils/SingleProjectData';
 
 const ProjectInfo = () => {
 	return (

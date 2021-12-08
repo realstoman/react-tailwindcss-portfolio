@@ -1,4 +1,4 @@
-import { ProjectImages } from '../utils/SingleProjectData';
+import { ProjectImages } from '../../utils/SingleProjectData';
 
 const ProjectGallery = () => {
 	return (

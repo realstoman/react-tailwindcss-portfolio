@@ -1,4 +1,4 @@
-import { RelatedProject } from '../utils/SingleProjectData';
+import { RelatedProject } from '../../utils/SingleProjectData';
 
 const ProjectRelatedProjects = () => {
 	return (

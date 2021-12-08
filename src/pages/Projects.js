@@ -1,5 +1,5 @@
-import ProjectsGrid from '../components/ProjectsGrid';
-import { ProjectsProvider } from '../store/ProjectsContext';
+import ProjectsGrid from '../components/projects/ProjectsGrid';
+import { ProjectsProvider } from '../context/ProjectsContext';
 
 const Projects = () => {
 	return (
