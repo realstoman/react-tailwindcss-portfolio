@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import AppBanner from '../components/AppBanner';
+import AppBanner from '../components/shared/AppBanner';
 import ProjectsGrid from '../components/ProjectsGrid';
 import { ProjectsProvider } from '../store/ProjectsContext';
 

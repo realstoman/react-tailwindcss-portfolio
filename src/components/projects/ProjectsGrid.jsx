@@ -1,8 +1,7 @@
 import { useContext } from 'react';
 import ProjectSingle from './ProjectSingle';
 import { FiSearch } from 'react-icons/fi';
-import { ProjectsContext } from '../store/ProjectsContext';
-// import { ProjectsData } from '../utils/ProjectsData';
+import { ProjectsContext } from '../context/ProjectsContext';
 import ProjectsFilter from './ProjectsFilter';
 
 const ProjectsGrid = () => {

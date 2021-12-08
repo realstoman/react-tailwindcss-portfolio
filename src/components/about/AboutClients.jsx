@@ -1,5 +1,5 @@
 import AboutClientSingle from './AboutClientSingle';
-import { ClientsData, ClientsHeading } from '../utils/ClientsData';
+import { ClientsData, ClientsHeading } from '../../utils/ClientsData';
 
 const AboutClients = () => {
 	return (

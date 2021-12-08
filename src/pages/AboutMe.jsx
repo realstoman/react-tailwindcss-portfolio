@@ -1,6 +1,6 @@
-import AboutClients from '../components/AboutClients';
-import AboutCounter from '../components/AboutCounter';
-import AboutMeBio from '../components/AboutMeBio';
+import AboutClients from '../components/about/AboutClients';
+import AboutCounter from '../components/about/AboutCounter';
+import AboutMeBio from '../components/about/AboutMeBio';
 
 const About = () => {
 	return (

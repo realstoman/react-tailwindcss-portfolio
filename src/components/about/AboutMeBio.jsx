@@ -1,5 +1,5 @@
 import profileImage from '../images/profile.jpeg';
-import { AboutMeData } from '../utils/AboutMeData';
+import { AboutMeData } from '../../utils/AboutMeData';
 
 const AboutMeBio = () => {
 	return (

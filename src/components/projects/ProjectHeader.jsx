@@ -1,5 +1,5 @@
 import { FiClock, FiTag } from 'react-icons/fi';
-import { ProjectHeader } from '../utils/SingleProjectData';
+import { ProjectHeader } from '../../utils/SingleProjectData';
 
 const ProjectSingleHeader = () => {
 	return (
