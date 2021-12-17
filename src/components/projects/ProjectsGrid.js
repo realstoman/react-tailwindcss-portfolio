@@ -5,7 +5,7 @@ import { ProjectsContext } from '../../context/ProjectsContext';
 import ProjectsFilter from './ProjectsFilter';
 
 const ProjectsGrid = () => {
-	const [projects, setProjects] = useContext(ProjectsContext);
+	const { projects } = useContext(ProjectsContext);
 
 	// const selectedProject = '';
 	// const searchProject = '';

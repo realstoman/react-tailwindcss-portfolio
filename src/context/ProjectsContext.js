@@ -58,7 +58,7 @@ export const ProjectsProvider = (props) => {
 	]);
 
 	return (
-		<ProjectsContext.Provider value={[projects, setProjects]}>
+		<ProjectsContext.Provider value={{ projects, setProjects }}>
 			{props.children}
 		</ProjectsContext.Provider>
 	);
