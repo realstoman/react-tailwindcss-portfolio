@@ -106,13 +106,13 @@ export const singleProjectData = {
 				id: 1,
 				name: 'Twitter',
 				icon: <FiTwitter />,
-				url: 'https://twitter.com/NangialaiStoman',
+				url: 'https://twitter.com/realstoman',
 			},
 			{
 				id: 2,
 				name: 'Instagram',
 				icon: <FiInstagram />,
-				url: 'https://instagram.com/NangialaiStoman',
+				url: 'https://instagram.com/realstoman',
 			},
 			{
 				id: 3,

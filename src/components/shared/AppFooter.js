@@ -11,12 +11,12 @@ const socialLinks = [
 	{
 		id: 1,
 		icon: <FiGithub />,
-		url: 'https://github.com/NangialaiStoman',
+		url: 'https://github.com/realstoman',
 	},
 	{
 		id: 2,
 		icon: <FiTwitter />,
-		url: 'https://twitter.com/NangialaiStoman',
+		url: 'https://twitter.com/realstoman',
 	},
 	{
 		id: 3,
@@ -26,12 +26,12 @@ const socialLinks = [
 	{
 		id: 4,
 		icon: <FiInstagram />,
-		url: 'https://instagram.com/NangialaiStoman',
+		url: 'https://instagram.com/realstoman',
 	},
 	{
 		id: 5,
 		icon: <FiFeather />,
-		url: 'https://behance.net/NangialaiStoman',
+		url: 'https://behance.net/realstoman',
 	},
 ];
 
@@ -66,7 +66,7 @@ const AppFooter = () => {
 					<div className="text-lg text-ternary-dark dark:text-ternary-light">
 						&copy; 2021
 						<Link
-							to="https://github.com/NangialaiStoman/react-tailwindcss-portfolio"
+							to="https://github.com/realstoman/react-tailwindcss-portfolio"
 							className="hover:underline ml-1"
 						>
 							React & TailwindCSS Portfolio
