@@ -1,8 +1,14 @@
+import { motion } from 'framer-motion';
 import { FiX } from 'react-icons/fi';
 
 const HireMeModal = ({ onClose, onRequest }) => {
 	return (
-		<div className="fixed inset-0 z-30 transition-all duration-500">
+		<motion.div
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			exit={{ opacity: 0 }}
+			className="fixed inset-0 z-30 transition-all duration-500"
+		>
 			{/* Modal Background */}
 			<div className="bg-filter bg-black bg-opacity-50 fixed inset-0 w-full h-full z-20"></div>
 
@@ -119,7 +125,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 					</div>
 				</div>
 			</main>
-		</div>
+		</motion.div>
 	);
 };
 
