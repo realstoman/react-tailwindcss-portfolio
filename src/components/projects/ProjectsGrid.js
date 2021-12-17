@@ -5,7 +5,8 @@ import { ProjectsContext } from '../../context/ProjectsContext';
 import ProjectsFilter from './ProjectsFilter';
 
 const ProjectsGrid = () => {
-	const { projects } = useContext(ProjectsContext);
+	const { setSearchProject, searchProjectsByTitle } =
+		useContext(ProjectsContext);
 
 	// const selectedProject = '';
 	// const searchProject = '';
@@ -86,6 +87,9 @@ const ProjectsGrid = () => {
 							<FiSearch className="text-ternary-dark dark:text-ternary-light w-5 h-5"></FiSearch>
 						</span>
 						<input
+							onChange={(e) => {
+								setSearchProject(e.target.value);
+							}}
 							className="
                                 pl-3
                                 pr-1
@@ -120,7 +124,7 @@ const ProjectsGrid = () => {
 
 			{/* Projects grid start */}
 			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
-				{projects.map((project) => (
+				{searchProjectsByTitle.map((project) => (
 					<ProjectSingle
 						title={project.title}
 						category={project.category}
