@@ -178,7 +178,7 @@ const AppHeader = () => {
 					{/* Header right section buttons start */}
 					<div className="hidden sm:flex justify-between items-center flex-col md:flex-row">
 						{/* Hire me button start */}
-						<div>
+						<div className="hidden md:flex">
 							<button
 								onClick={showHireMeModal}
 								className="text-md font-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5"
