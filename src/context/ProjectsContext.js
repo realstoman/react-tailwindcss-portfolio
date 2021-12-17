@@ -8,12 +8,20 @@ export const ProjectsContext = createContext();
 export const ProjectsProvider = (props) => {
 	const [projects, setProjects] = useState(projectsData);
 	const [searchProject, setSearchProject] = useState('');
+	const [selectProject, setSelectProject] = useState('');
 
-	// Search projects
+	// Search projects by project title
 	const searchProjectsByTitle = projects.filter((item) => {
 		if (item.title.toLowerCase().includes(searchProject.toLowerCase()))
 			return item;
 		else if (searchProject === '') return item;
+	});
+
+	// Select projects by project category
+	const selectProjectsByCategory = projects.filter((item) => {
+		let category =
+			item.category.charAt(0).toUpperCase() + item.category.slice(1);
+		return category.includes(selectProject);
 	});
 
 	return (
@@ -21,8 +29,12 @@ export const ProjectsProvider = (props) => {
 			value={{
 				projects,
 				setProjects,
+				searchProject,
 				setSearchProject,
 				searchProjectsByTitle,
+				selectProject,
+				setSelectProject,
+				selectProjectsByCategory,
 			}}
 		>
 			{props.children}
