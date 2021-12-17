@@ -6,7 +6,11 @@ const ProjectSingle = ({ title, category, image }) => {
 		<motion.div
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1, delay: 1 }}
-			exit={{ opacity: 0 }}
+			transition={{
+				ease: 'easeInOut',
+				duration: 0.7,
+				delay: 0.15,
+			}}
 		>
 			<Link
 				to="/projects/single-project"
