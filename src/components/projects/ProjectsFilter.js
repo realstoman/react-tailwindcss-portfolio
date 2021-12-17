@@ -5,9 +5,12 @@ const selectOptions = [
 	'Branding',
 ];
 
-const ProjectsFilter = () => {
+const ProjectsFilter = ({ setSelectProject }) => {
 	return (
 		<select
+			onChange={(e) => {
+				setSelectProject(e.target.value);
+			}}
 			className="
                 px-4
                 sm:px-6
@@ -24,7 +27,7 @@ const ProjectsFilter = () => {
                 dark:text-ternary-light
             "
 		>
-			<option value className="text-sm sm:text-md">
+			<option value={setSelectProject} className="text-sm sm:text-md">
 				All Projects
 			</option>
 

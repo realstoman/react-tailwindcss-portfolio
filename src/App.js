@@ -8,27 +8,30 @@ import Contact from './pages/Contact';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import ProjectSingle from './pages/ProjectSingle';
+import { AnimatePresence } from 'framer-motion';
 
 function App() {
 	return (
-		<div className=" bg-secondary-light dark:bg-primary-dark transition duration-300">
-			<Router>
-				<ScrollToTop />
-				<AppHeader />
-				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="projects" element={<Projects />} />
-					<Route
-						path="projects/single-project"
-						element={<ProjectSingle />}
-					/>
+		<AnimatePresence>
+			<div className=" bg-secondary-light dark:bg-primary-dark transition duration-300">
+				<Router>
+					<ScrollToTop />
+					<AppHeader />
+					<Routes>
+						<Route path="/" element={<Home />} />
+						<Route path="projects" element={<Projects />} />
+						<Route
+							path="projects/single-project"
+							element={<ProjectSingle />}
+						/>
 
-					<Route path="about" element={<About />} />
-					<Route path="contact" element={<Contact />} />
-				</Routes>
-				<AppFooter />
-			</Router>
-		</div>
+						<Route path="about" element={<About />} />
+						<Route path="contact" element={<Contact />} />
+					</Routes>
+					<AppFooter />
+				</Router>
+			</div>
+		</AnimatePresence>
 	);
 }
 

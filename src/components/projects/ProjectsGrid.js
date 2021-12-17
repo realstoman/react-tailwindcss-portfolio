@@ -3,34 +3,40 @@ import { FiSearch } from 'react-icons/fi';
 import ProjectSingle from './ProjectSingle';
 import { ProjectsContext } from '../../context/ProjectsContext';
 import ProjectsFilter from './ProjectsFilter';
+import { motion } from 'framer-motion';
 
 const ProjectsGrid = () => {
-	const [projects, setProjects] = useContext(ProjectsContext);
+	const {
+		projects,
+		searchProject,
+		setSearchProject,
+		searchProjectsByTitle,
+		selectProject,
+		setSelectProject,
+		selectProjectsByCategory,
+	} = useContext(ProjectsContext);
 
-	// const selectedProject = '';
-	// const searchProject = '';
-
-	// const filteredProjects = () => {
-	// 	if (selectedProject) {
-	// 		return filterProjectsByCategory();
-	// 	} else if (searchProject) {
-	// 		return filterProjectsBySearch();
-	// 	}
-	// 	return ProjectsData;
-	// };
-
-	// const filterProjectsByCategory = () => {
-	// 	return ProjectsData.filter((item) => {
-	// 		let category =
-	// 			item.category.charAt(0).toUpperCase() + item.category.slice(1);
-	// 		return category.includes(selectedProject);
-	// 	});
-	// };
-
-	// const filterProjectsBySearch = () => {
-	// 	let project = new RegExp(searchProject, 'i');
-	// 	return ProjectsData.filter((el) => el.title.match(project));
-	// };
+	const projectsResult = () => {
+		if (setSearchProject) {
+			return searchProjectsByTitle.map((project) => (
+				<ProjectSingle
+					title={project.title}
+					category={project.category}
+					image={project.img}
+					key={project.id}
+				/>
+			));
+		} else if (setSelectProject) {
+			return selectProjectsByCategory.map((project) => (
+				<ProjectSingle
+					title={project.title}
+					category={project.category}
+					image={project.img}
+					key={project.id}
+				/>
+			));
+		}
+	};
 
 	return (
 		<section className="py-5 sm:py-10 mt-5 sm:mt-10">
@@ -86,6 +92,9 @@ const ProjectsGrid = () => {
 							<FiSearch className="text-ternary-dark dark:text-ternary-light w-5 h-5"></FiSearch>
 						</span>
 						<input
+							onChange={(e) => {
+								setSearchProject(e.target.value);
+							}}
 							className="
                                 pl-3
                                 pr-1
@@ -112,7 +121,7 @@ const ProjectsGrid = () => {
 					</div>
 					{/* <ProjectsFilter @change="selectedProject = $event" /> */}
 
-					<ProjectsFilter />
+					<ProjectsFilter setSelectProject={setSelectProject} />
 					{/* <p>Filter projects</p> */}
 				</div>
 			</div>
@@ -120,14 +129,32 @@ const ProjectsGrid = () => {
 
 			{/* Projects grid start */}
 			<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 mt-6 sm:gap-10">
-				{projects.map((project) => (
-					<ProjectSingle
-						title={project.title}
-						category={project.category}
-						image={project.img}
-						key={project.id}
-					/>
-				))}
+				{selectProject
+					? selectProjectsByCategory.map((project) => (
+							<ProjectSingle
+								title={project.title}
+								category={project.category}
+								image={project.img}
+								key={project.id}
+							/>
+					  ))
+					: searchProject
+					? searchProjectsByTitle.map((project) => (
+							<ProjectSingle
+								title={project.title}
+								category={project.category}
+								image={project.img}
+								key={project.id}
+							/>
+					  ))
+					: projects.map((project) => (
+							<ProjectSingle
+								title={project.title}
+								category={project.category}
+								image={project.img}
+								key={project.id}
+							/>
+					  ))}
 			</div>
 			{/* Projects grid end */}
 		</section>
