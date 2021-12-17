@@ -2,20 +2,37 @@ import AboutMeBio from '../components/about/AboutMeBio';
 import AboutCounter from '../components/about/AboutCounter';
 import AboutClients from '../components/about/AboutClients.js';
 import { AboutMeProvider } from '../context/AboutMeContext';
+import { motion } from 'framer-motion';
 
 const About = () => {
 	return (
 		<AboutMeProvider>
-			<div className="container mx-auto">
+			<motion.div
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1, delay: 1 }}
+				exit={{ opacity: 0 }}
+				className="container mx-auto"
+			>
 				<AboutMeBio />
-			</div>
+			</motion.div>
 
 			{/** Counter without paddings */}
-			<AboutCounter />
+			<motion.div
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1, delay: 1 }}
+				exit={{ opacity: 0 }}
+			>
+				<AboutCounter />
+			</motion.div>
 
-			<div className="container mx-auto">
+			<motion.div
+				initial={{ opacity: 0 }}
+				animate={{ opacity: 1, delay: 1 }}
+				exit={{ opacity: 0 }}
+				className="container mx-auto"
+			>
 				<AboutClients />
-			</div>
+			</motion.div>
 		</AboutMeProvider>
 	);
 };

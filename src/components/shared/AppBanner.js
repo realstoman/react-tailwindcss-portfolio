@@ -2,12 +2,18 @@ import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 import { FiArrowDownCircle } from 'react-icons/fi';
 import developerLight from '../../images/developer.svg';
 import developerDark from '../../images/developer-dark.svg';
+import { motion } from 'framer-motion';
 
 const AppBanner = () => {
 	const [activeTheme] = useThemeSwitcher();
 
 	return (
-		<section className="flex flex-col sm:justify-between items-center sm:flex-row mt-12 md:mt-2">
+		<motion.section
+			initial={{ opacity: 0 }}
+			animate={{ opacity: 1 }}
+			exit={{ opacity: 0 }}
+			className="flex flex-col sm:justify-between items-center sm:flex-row mt-12 md:mt-2"
+		>
 			<div className="w-full md:w-1/3 text-left">
 				<h1 className="text-2xl lg:text-4xl xl:text-5xl text-center sm:text-left font-semibold text-ternary-dark dark:text-primary-light uppercase">
 					Hi, Iam Stoman
@@ -35,7 +41,7 @@ const AppBanner = () => {
 					alt="Developer"
 				/>
 			</div>
-		</section>
+		</motion.section>
 	);
 };
 

@@ -3,6 +3,7 @@ import { FiSearch } from 'react-icons/fi';
 import ProjectSingle from './ProjectSingle';
 import { ProjectsContext } from '../../context/ProjectsContext';
 import ProjectsFilter from './ProjectsFilter';
+import { motion } from 'framer-motion';
 
 const ProjectsGrid = () => {
 	const {
