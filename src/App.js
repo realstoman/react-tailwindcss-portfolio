@@ -12,9 +12,9 @@ import { AnimatePresence } from 'framer-motion';
 
 function App() {
 	return (
-		<div className=" bg-secondary-light dark:bg-primary-dark transition duration-300">
-			<Router>
-				<AnimatePresence>
+		<AnimatePresence>
+			<div className=" bg-secondary-light dark:bg-primary-dark transition duration-300">
+				<Router>
 					<ScrollToTop />
 					<AppHeader />
 					<Routes>
@@ -29,9 +29,9 @@ function App() {
 						<Route path="contact" element={<Contact />} />
 					</Routes>
 					<AppFooter />
-				</AnimatePresence>
-			</Router>
-		</div>
+				</Router>
+			</div>
+		</AnimatePresence>
 	);
 }
 
