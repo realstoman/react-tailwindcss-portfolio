@@ -10,20 +10,20 @@ A simple portfolio starter theme built with React and TailwindCSS. This is a sim
 
 ## Features
 
--   Simple and responsive design
 -   [React](https://reactjs.org) with [React Router v6](https://reactrouter.com)
--   [Tailwind CSS v2](https://tailwindcss.com)
--   Theme Switcher with Dark Mode
--   Context API
--   Transitions & Animations
--   Counter
+-   [Tailwind CSS v3](https://tailwindcss.com)
+-   Context API For State Management
+-   Custom Hooks
+-   Dark Mode
+-   Framer Motion Transitions & Animations
 -   Projects filter by category
 -   Projects filter by search
--   Projects carousel
 -   Smooth scroll
+-   Counter
 -   Dynamic forms
 -   Back to top button
 -   Download file button
+-   Simple and responsive design
 
 ## Installation
 
@@ -40,7 +40,7 @@ brew install node
 2. ##### Clone the repo:
 
 ```
-git clone https://github.com/NangialaiStoman/react-tailwindcss-portfolio.git
+git clone https://github.com/realstoman/react-tailwindcss-portfolio.git
 ```
 
 3. ##### Open the project folder:
