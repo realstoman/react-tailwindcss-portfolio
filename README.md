@@ -1,6 +1,6 @@
 # React & TailwindCSS Portfolio - With Dark Mode
 
-A simple portfolio starter theme built with React and TailwindCSS. This is a simple portfolio theme and its geared towards beginners. This is the React version of [vuejs-tailwindcss-portfolio](https://github.com/NangialaiStoman/vuejs-tailwindcss-portfolio).
+A simple portfolio starter theme built with React and TailwindCSS. This is the React version of [vuejs-tailwindcss-portfolio](https://github.com/realstoman/vuejs-tailwindcss-portfolio).
 
 ![React-TailwindCSS-Portfolio](https://user-images.githubusercontent.com/16396664/140909796-815239e4-a986-46ad-bbd0-4b166127bbb8.JPG)
 
