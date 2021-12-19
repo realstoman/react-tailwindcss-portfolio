@@ -12,9 +12,14 @@ export const ProjectsProvider = (props) => {
 
 	// Search projects by project title
 	const searchProjectsByTitle = projects.filter((item) => {
-		if (item.title.toLowerCase().includes(searchProject.toLowerCase()))
-			return item;
-		else if (searchProject === '') return item;
+		const result = item.title
+			.toLowerCase()
+			.includes(searchProject.toLowerCase())
+			? item
+			: searchProject === ''
+			? item
+			: '';
+		return result;
 	});
 
 	// Select projects by project category
