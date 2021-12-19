@@ -1,6 +1,13 @@
 import { motion } from 'framer-motion';
 import { FiX } from 'react-icons/fi';
 
+const selectOptions = [
+	'Web Application',
+	'Mobile Application',
+	'UI/UX Design',
+	'Branding',
+];
+
 const HireMeModal = ({ onClose, onRequest }) => {
 	return (
 		<motion.div
@@ -65,7 +72,14 @@ const HireMeModal = ({ onClose, onRequest }) => {
 										required=""
 										aria-label="Project Category"
 									>
-										<option>Something</option>
+										{selectOptions.map((option) => (
+											<option
+												className="text-normal sm:text-md"
+												key={option}
+											>
+												{option}
+											</option>
+										))}
 									</select>
 								</div>
 

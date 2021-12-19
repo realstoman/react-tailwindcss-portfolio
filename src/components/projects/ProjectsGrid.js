@@ -3,7 +3,6 @@ import { FiSearch } from 'react-icons/fi';
 import ProjectSingle from './ProjectSingle';
 import { ProjectsContext } from '../../context/ProjectsContext';
 import ProjectsFilter from './ProjectsFilter';
-import { motion } from 'framer-motion';
 
 const ProjectsGrid = () => {
 	const {
@@ -15,28 +14,6 @@ const ProjectsGrid = () => {
 		setSelectProject,
 		selectProjectsByCategory,
 	} = useContext(ProjectsContext);
-
-	const projectsResult = () => {
-		if (setSearchProject) {
-			return searchProjectsByTitle.map((project) => (
-				<ProjectSingle
-					title={project.title}
-					category={project.category}
-					image={project.img}
-					key={project.id}
-				/>
-			));
-		} else if (setSelectProject) {
-			return selectProjectsByCategory.map((project) => (
-				<ProjectSingle
-					title={project.title}
-					category={project.category}
-					image={project.img}
-					key={project.id}
-				/>
-			));
-		}
-	};
 
 	return (
 		<section className="py-5 sm:py-10 mt-5 sm:mt-10">
