@@ -1,13 +1,22 @@
-import { useState } from 'react';
-import { FIChevronUp } from 'react-icons/fi';
+// NOTE: This scroll to top is the actual working scroll to to when user clicks
+
+import { useState, useEffect } from 'react';
+import { FiChevronUp } from 'react-icons/fi';
 
 const useScrollToTop = () => {
 	const [showScroll, setShowScroll] = useState(false);
 
+	useEffect(() => {
+		window.addEventListener('scroll', scrollToTop);
+		return function cleanup() {
+			window.removeEventListener('scroll', scrollToTop);
+		};
+	});
+
 	const scrollToTop = () => {
-		if (!showScroll & (window.pageYOffset > 500)) {
+		if (!showScroll && window.pageYOffset > 400) {
 			setShowScroll(true);
-		} else if (showScroll && window.pageYOffset <= 500) {
+		} else if (showScroll && window.pageYOffset <= 400) {
 			setShowScroll(false);
 		}
 	};
@@ -23,10 +32,17 @@ const useScrollToTop = () => {
 
 	return (
 		<>
-			<FIChevronUp
+			<FiChevronUp
 				className="scrollToTop"
 				onClick={backToTop}
-				style={{ height: 40, display: showScroll ? 'flex' : 'none' }}
+				style={{
+					height: 45,
+					width: 45,
+					borderRadius: 50,
+					right: 50,
+					bottom: 50,
+					display: showScroll ? 'flex' : 'none',
+				}}
 			/>
 		</>
 	);

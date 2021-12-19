@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import ProjectSingle from './pages/ProjectSingle';
 import { AnimatePresence } from 'framer-motion';
+import UseScrollToTop from './hooks/useScrollToTop';
 
 function App() {
 	return (
@@ -30,6 +31,7 @@ function App() {
 					</Routes>
 					<AppFooter />
 				</Router>
+				<UseScrollToTop />
 			</div>
 		</AnimatePresence>
 	);
