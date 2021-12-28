@@ -75,9 +75,9 @@ const ProjectInfo = () => {
 						{singleProjectData.ProjectInfo.SocialSharing.map(
 							(social) => {
 								return (
-									<Link
+									<a
 										key={social.id}
-										to={social.url}
+										href={social.url}
 										target="__blank"
 										aria-label="Share Project"
 										className="bg-ternary-light dark:bg-ternary-dark text-gray-400 hover:text-primary-dark dark:hover:text-primary-light p-2 rounded-lg shadow-sm"
@@ -85,7 +85,7 @@ const ProjectInfo = () => {
 										<span className="text-lg lg:text-2xl">
 											{social.icon}
 										</span>
-									</Link>
+									</a>
 								);
 							}
 						)}
