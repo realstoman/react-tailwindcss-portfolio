@@ -28,11 +28,6 @@ const socialLinks = [
 		icon: <FiInstagram />,
 		url: 'https://instagram.com/realstoman',
 	},
-	{
-		id: 5,
-		icon: <FiFeather />,
-		url: 'https://behance.net/realstoman',
-	},
 ];
 
 const AppFooter = () => {
