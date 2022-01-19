@@ -1,10 +1,4 @@
-import {
-	FiGithub,
-	FiTwitter,
-	FiInstagram,
-	FiFeather,
-	FiBook,
-} from 'react-icons/fi';
+import { FiGithub, FiTwitter, FiInstagram, FiBook } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 
 const socialLinks = [
@@ -35,8 +29,8 @@ const AppFooter = () => {
 		<div className="container mx-auto">
 			<div className="pt-20 sm:pt-30 pb-8 mt-20 border-t-2 border-primary-light dark:border-secondary-dark">
 				{/* Footer social links start */}
-				<div className="flex flex-col justify-center items-center mb-12 sm:mb-28">
-					<p className="text-3xl sm:text-4xl font-semibold text-primary-dark dark:text-primary-light mb-5">
+				<div className="font-general-regular flex flex-col justify-center items-center mb-12 sm:mb-28">
+					<p className="text-3xl sm:text-4xl text-primary-dark dark:text-primary-light mb-5">
 						Follow me
 					</p>
 					<ul className="flex gap-4 sm:gap-8">
@@ -57,9 +51,9 @@ const AppFooter = () => {
 				{/* Footer social links end */}
 
 				{/* Footer copyright start */}
-				<div className="flex justify-center items-center text-center">
+				<div className="font-general-regular flex justify-center items-center text-center">
 					<div className="text-lg text-ternary-dark dark:text-ternary-light">
-						&copy; 2021
+						&copy; {new Date().getFullYear()}
 						<Link
 							to="https://github.com/realstoman/react-tailwindcss-portfolio"
 							className="hover:underline ml-1"
@@ -70,7 +64,7 @@ const AppFooter = () => {
 						<Link
 							to="https://stoman.me"
 							target="__blank"
-							className="text-secondary-dark dark:text-secondary-light font-medium uppercase hover:underline ml-1"
+							className="text-secondary-dark dark:text-secondary-light uppercase hover:underline ml-1"
 						>
 							Stoman
 						</Link>
