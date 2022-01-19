@@ -71,7 +71,7 @@ const ProjectsGrid = () => {
 							onChange={(e) => {
 								setSearchProject(e.target.value);
 							}}
-							className="
+							className="font-general-medium 
                                 pl-3
                                 pr-1
                                 sm:px-4
