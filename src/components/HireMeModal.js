@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { FiX } from 'react-icons/fi';
+import Button from './reusable/Button';
 
 const selectOptions = [
 	'Web Application',
@@ -14,7 +15,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 			initial={{ opacity: 0 }}
 			animate={{ opacity: 1 }}
 			exit={{ opacity: 0 }}
-			className="fixed inset-0 z-30 transition-all duration-500"
+			className="font-general-medium fixed inset-0 z-30 transition-all duration-500"
 		>
 			{/* Modal Background */}
 			<div className="bg-filter bg-black bg-opacity-50 fixed inset-0 w-full h-full z-20"></div>
@@ -24,7 +25,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 				<div className="modal-wrapper flex items-center z-30">
 					<div className="modal max-w-md mx-5 xl:max-w-xl lg:max-w-xl md:max-w-xl bg-secondary-light dark:bg-primary-dark max-h-screen shadow-lg flex-row rounded-lg relative">
 						<div className="modal-header flex justify-between gap-10 p-5 border-b border-ternary-light dark:border-ternary-dark">
-							<h5 className=" text-primary-dark dark:text-primary-light text-2xl">
+							<h5 className=" text-primary-dark dark:text-primary-light text-xl">
 								What project are you looking for?
 							</h5>
 							<button
@@ -43,7 +44,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 							>
 								<div className="">
 									<input
-										className="w-full px-5 py-2 border dark:border-secondary-dark rounded-md text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
+										className="w-full px-5 py-2 border dark:border-secondary-dark rounded-md text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
 										id="name"
 										name="name"
 										type="text"
@@ -54,7 +55,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 								</div>
 								<div className="mt-6">
 									<input
-										className="w-full px-5 py-2 border dark:border-secondary-dark rounded-md text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
+										className="w-full px-5 py-2 border dark:border-secondary-dark rounded-md text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
 										id="email"
 										name="email"
 										type="text"
@@ -65,7 +66,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 								</div>
 								<div className="mt-6">
 									<select
-										className="w-full px-5 py-2 border dark:border-secondary-dark rounded-md text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
+										className="w-full px-5 py-2 border dark:border-secondary-dark rounded-md text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
 										id="subject"
 										name="subject"
 										type="text"
@@ -85,7 +86,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 
 								<div className="mt-6">
 									<textarea
-										className="w-full px-5 py-2 border dark:border-secondary-dark rounded-md text-md dark:font-medium bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
+										className="w-full px-5 py-2 border dark:border-secondary-dark rounded-md text-md bg-secondary-light dark:bg-ternary-dark text-primary-dark dark:text-ternary-light"
 										id="message"
 										name="message"
 										cols="14"
@@ -96,8 +97,8 @@ const HireMeModal = ({ onClose, onRequest }) => {
 								</div>
 
 								<div className="mt-6 pb-4 sm:pb-1">
-									<button
-										onClick={onRequest}
+									<span
+										onClick={onClose}
 										type="submit"
 										className="px-4
 											sm:px-6
@@ -112,16 +113,16 @@ const HireMeModal = ({ onClose, onRequest }) => {
 											focus:ring-1 focus:ring-indigo-900"
 										aria-label="Submit Request"
 									>
-										Send Request
-									</button>
+										<Button title="Send Request" />
+									</span>
 								</div>
 							</form>
 						</div>
 						<div className="modal-footer mt-2 sm:mt-0 py-5 px-8 border0-t text-right">
-							<button
+							<span
 								onClick={onClose}
 								type="button"
-								className=" px-4
+								className="px-4
 									sm:px-6
 									py-2
 									bg-indigo-400
@@ -133,8 +134,8 @@ const HireMeModal = ({ onClose, onRequest }) => {
 									focus:ring-1 focus:ring-indigo-900"
 								aria-label="Close Modal"
 							>
-								Close
-							</button>
+								<Button title="Close" />
+							</span>
 						</div>
 					</div>
 				</div>

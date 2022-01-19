@@ -14,7 +14,7 @@ const AboutMeBio = () => {
 			{/* About me portfolio image end */}
 
 			{/* About me details start */}
-			<div className="w-full sm:w-3/4 text-left">
+			<div className="font-general-regular w-full sm:w-3/4 text-left">
 				{aboutMe.map((bio) => (
 					<p
 						className="mb-4 text-ternary-dark dark:text-ternary-light text-lg"

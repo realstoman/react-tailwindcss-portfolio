@@ -11,11 +11,12 @@ A simple portfolio starter theme built with React and TailwindCSS. This is the R
 ## Features
 
 -   [React](https://reactjs.org) with [React Router v6](https://reactrouter.com)
--   [Tailwind CSS v3](https://tailwindcss.com)
+-   [Tailwind CSS v2](https://tailwindcss.com)
 -   Context API For State Management
 -   Custom Hooks
--   Dark Mode
--   Framer Motion Transitions & Animations
+-   Framer Motion transitions & animations
+-   Reusable components
+-   Dark mode
 -   Projects filter by category
 -   Projects filter by search
 -   Smooth scroll
@@ -53,6 +54,12 @@ cd react-tailwindcss-portfolio
 
 ```
 yarn install
+```
+
+4. NOTES: If you don't have yarn installed, install it globally using npm:
+
+```
+npm install --global yarn
 ```
 
 5. ##### Start a local dev server at `http://localhost:3000`:
