@@ -1,7 +1,7 @@
 const ContactForm = () => {
 	return (
 		<div className="w-full lg:w-1/2">
-			<div className="leading-loose">
+			<div className="font-general-regular leading-loose">
 				<form
 					onSubmit={(e) => {
 						e.preventDefault();
