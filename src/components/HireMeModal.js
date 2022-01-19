@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { FiX } from 'react-icons/fi';
+import Button from './reusable/Button';
 
 const selectOptions = [
 	'Web Application',
@@ -96,8 +97,8 @@ const HireMeModal = ({ onClose, onRequest }) => {
 								</div>
 
 								<div className="mt-6 pb-4 sm:pb-1">
-									<button
-										onClick={onRequest}
+									<span
+										onClick={onClose}
 										type="submit"
 										className="px-4
 											sm:px-6
@@ -112,16 +113,16 @@ const HireMeModal = ({ onClose, onRequest }) => {
 											focus:ring-1 focus:ring-indigo-900"
 										aria-label="Submit Request"
 									>
-										Send Request
-									</button>
+										<Button title="Send Request" />
+									</span>
 								</div>
 							</form>
 						</div>
 						<div className="modal-footer mt-2 sm:mt-0 py-5 px-8 border0-t text-right">
-							<button
+							<span
 								onClick={onClose}
 								type="button"
-								className=" px-4
+								className="px-4
 									sm:px-6
 									py-2
 									bg-indigo-400
@@ -133,8 +134,8 @@ const HireMeModal = ({ onClose, onRequest }) => {
 									focus:ring-1 focus:ring-indigo-900"
 								aria-label="Close Modal"
 							>
-								Close
-							</button>
+								<Button title="Close" />
+							</span>
 						</div>
 					</div>
 				</div>

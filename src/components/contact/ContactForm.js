@@ -1,3 +1,5 @@
+import Button from '../reusable/Button';
+
 const ContactForm = () => {
 	return (
 		<div className="w-full lg:w-1/2">
@@ -80,14 +82,12 @@ const ContactForm = () => {
 						></textarea>
 					</div>
 
-					<div className="mt-6">
-						<button
-							className="px-4 py-2.5 text-white font-medium tracking-wider bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 rounded-md"
+					<div className="font-general-medium w-40 px-4 py-2.5 text-white text-center font-medium tracking-wider bg-indigo-500 hover:bg-indigo-600 focus:ring-1 focus:ring-indigo-900 rounded-lg mt-6">
+						<Button
+							title="Send Message"
 							type="submit"
 							aria-label="Send Message"
-						>
-							Send Message
-						</button>
+						/>
 					</div>
 				</form>
 			</div>
