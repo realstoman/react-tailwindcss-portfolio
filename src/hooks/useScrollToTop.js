@@ -1,4 +1,5 @@
-// NOTE: This scroll to top is the actual working scroll to to when user clicks
+// NOTE: This scroll to top is the actual working scroll to to when user clicks on the circle arrow that appears when use scrolls down.
+// The other `ScrollToTop` component in components folder is for the default react scroll to top behavior on route visit.
 
 import { useState, useEffect } from 'react';
 import { FiChevronUp } from 'react-icons/fi';
