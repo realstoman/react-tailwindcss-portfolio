@@ -1,17 +1,17 @@
 const ContactForm = () => {
 	return (
 		<div className="w-full lg:w-1/2">
-			<div className="font-general-regular leading-loose">
+			<div className="leading-loose">
 				<form
 					onSubmit={(e) => {
 						e.preventDefault();
 					}}
-					className="max-w-xl m-4 p-6 sm:p-10 bg-secondary-light dark:bg-secondary-dark rounded-lg shadow-xl text-left"
+					className="max-w-xl m-4 p-6 sm:p-10 bg-secondary-light dark:bg-secondary-dark rounded-xl shadow-xl text-left"
 				>
-					<p className="text-primary-dark dark:text-primary-light text-2xl font-semibold mb-8">
+					<p className="font-general-medium text-primary-dark dark:text-primary-light text-2xl mb-8">
 						Contact Form
 					</p>
-					<div className="">
+					<div className="font-general-regular">
 						<label
 							className="block text-lg text-primary-dark dark:text-primary-light mb-2"
 							htmlFor="name"
@@ -19,7 +19,7 @@ const ContactForm = () => {
 							Full Name
 						</label>
 						<input
-							className="w-full px-5 py-2 border dark:border-secondary-dark text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md dark:font-medium"
+							className="w-full px-5 py-2 border border-gray-300 dark:border-primary-dark border-opacity-50 text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md dark:font-medium"
 							id="name"
 							name="name"
 							type="text"
@@ -36,7 +36,7 @@ const ContactForm = () => {
 							Email
 						</label>
 						<input
-							className="w-full px-5 py-2 border dark:border-secondary-dark text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md dark:font-medium"
+							className="w-full px-5 py-2 border border-gray-300 dark:border-primary-dark border-opacity-50 text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md dark:font-medium"
 							id="email"
 							name="email"
 							type="text"
@@ -53,7 +53,7 @@ const ContactForm = () => {
 							Subject
 						</label>
 						<input
-							className="w-full px-5 py-2 border dark:border-secondary-dark text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md dark:font-medium"
+							className="w-full px-5 py-2 border border-gray-300 dark:border-primary-dark border-opacity-50 text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md dark:font-medium"
 							id="subject"
 							name="subject"
 							type="text"
@@ -71,7 +71,7 @@ const ContactForm = () => {
 							Message
 						</label>
 						<textarea
-							className="w-full px-5 py-2 border dark:border-secondary-dark text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md dark:font-medium"
+							className="w-full px-5 py-2 border border-gray-300 dark:border-primary-dark border-opacity-50 text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md dark:font-medium"
 							id="message"
 							name="message"
 							cols="14"
