@@ -17,7 +17,7 @@ const HireMeModal = ({ onClose, onRequest }) => {
 			exit={{ opacity: 0 }}
 			className="font-general-medium fixed inset-0 z-30 transition-all duration-500"
 		>
-			{/* Modal Background */}
+			{/* Modal Backdrop */}
 			<div className="bg-filter bg-black bg-opacity-50 fixed inset-0 w-full h-full z-20"></div>
 
 			{/* Modal Content */}
@@ -105,12 +105,10 @@ const HireMeModal = ({ onClose, onRequest }) => {
 											py-2
 											sm:py-2.5
 											text-white
-											font-normal
-											sm:font-medium
 											bg-indigo-500
 											hover:bg-indigo-600
 											rounded-md
-											focus:ring-1 focus:ring-indigo-900"
+											focus:ring-1 focus:ring-indigo-900 duration-500"
 										aria-label="Submit Request"
 									>
 										<Button title="Send Request" />
@@ -124,14 +122,9 @@ const HireMeModal = ({ onClose, onRequest }) => {
 								type="button"
 								className="px-4
 									sm:px-6
-									py-2
-									bg-indigo-400
-									hover:bg-indigo-500
+									py-2 bg-gray-600 text-primary-light hover:bg-ternary-dark dark:bg-gray-200 dark:text-secondary-dark dark:hover:bg-primary-light
 									rounded-md
-									font-normal
-									sm:font-bold
-									text-primary-light
-									focus:ring-1 focus:ring-indigo-900"
+									focus:ring-1 focus:ring-indigo-900 duration-500"
 								aria-label="Close Modal"
 							>
 								<Button title="Close" />
