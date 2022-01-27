@@ -20,15 +20,15 @@ const contacts = [
 
 const ContactDetails = () => {
 	return (
-		<div className="font-general-regular w-full lg:w-1/2">
+		<div className="w-full lg:w-1/2">
 			<div className="text-left max-w-xl px-6">
-				<h2 className="text-2xl text-primary-dark dark:text-primary-light font-semibold mt-12 mb-8">
+				<h2 className="font-general-medium text-2xl text-primary-dark dark:text-primary-light mt-12 mb-8">
 					Contact details
 				</h2>
-				<ul>
+				<ul className="font-general-regular">
 					{contacts.map((contact) => (
 						<li className="flex " key={contact.id}>
-							<i className="text-2xl text-gray-500 dark:text-gray-400 mr-4 mt-1">
+							<i className="text-2xl text-gray-500 dark:text-gray-400 mr-4">
 								{contact.icon}
 							</i>
 							<span className="text-lg mb-4 text-ternary-dark dark:text-ternary-light">
