@@ -7,7 +7,7 @@ function AppFooterCopyright() {
 				&copy; {new Date().getFullYear()}
 				<Link
 					to="https://github.com/realstoman/react-tailwindcss-portfolio"
-					className="hover:underline hover:text-indigo-600 dark:hover:text-indigo-300 ml-1"
+					className="hover:underline hover:text-indigo-600 dark:hover:text-indigo-300 ml-1 duration-500"
 				>
 					React & TailwindCSS Portfolio
 				</Link>
@@ -15,7 +15,7 @@ function AppFooterCopyright() {
 				<Link
 					to="https://stoman.me"
 					target="__blank"
-					className="text-secondary-dark dark:text-secondary-light font-medium uppercase hover:underline hover:text-indigo-600 dark:hover:text-indigo-300 ml-1"
+					className="text-secondary-dark dark:text-secondary-light font-medium uppercase hover:underline hover:text-indigo-600 dark:hover:text-indigo-300 ml-1 duration-500"
 				>
 					Stoman
 				</Link>

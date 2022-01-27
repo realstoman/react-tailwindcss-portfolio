@@ -26,7 +26,7 @@ const ProjectInfo = () => {
 											className={
 												info.title === 'Website' ||
 												info.title === 'Phone'
-													? 'hover:underline cursor-pointer'
+													? 'hover:underline hover:text-indigo-500 dark:hover:text-indigo-400 cursor-pointer duration-300'
 													: ''
 											}
 											aria-label="Project Website and Phone"
@@ -76,7 +76,7 @@ const ProjectInfo = () => {
 										href={social.url}
 										target="__blank"
 										aria-label="Share Project"
-										className="bg-ternary-light dark:bg-ternary-dark text-gray-400 hover:text-primary-dark dark:hover:text-primary-light p-2 rounded-lg shadow-sm"
+										className="bg-ternary-light dark:bg-ternary-dark text-gray-400 hover:text-primary-dark dark:hover:text-primary-light p-2 rounded-lg shadow-sm duration-500"
 									>
 										<span className="text-lg lg:text-2xl">
 											{social.icon}
