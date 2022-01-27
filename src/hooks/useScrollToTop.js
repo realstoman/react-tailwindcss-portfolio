@@ -43,6 +43,7 @@ const useScrollToTop = () => {
 					right: 50,
 					bottom: 50,
 					display: showScroll ? 'flex' : 'none',
+					padding: 5,
 				}}
 			/>
 		</>
