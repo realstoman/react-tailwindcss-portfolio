@@ -41,11 +41,9 @@ const AppHeader = () => {
 			id="nav"
 			className="sm:container sm:mx-auto"
 		>
-			{/* Header start */}
 			<div className="z-10 max-w-screen-lg xl:max-w-screen-xl block sm:flex sm:justify-between sm:items-center py-6">
-				{/* Header menu links and small screen hamburger menu start */}
+				{/* Header menu links and small screen hamburger menu */}
 				<div className="flex justify-between items-center px-4 sm:px-0">
-					{/* Logo start */}
 					<div>
 						<Link to="/">
 							{activeTheme === 'dark' ? (
@@ -63,9 +61,8 @@ const AppHeader = () => {
 							)}
 						</Link>
 					</div>
-					{/* Logo end */}
 
-					{/* Theme switcher small screen start */}
+					{/* Theme switcher small screen */}
 					<div
 						onClick={() => setTheme(activeTheme)}
 						aria-label="Theme Switcher"
@@ -77,9 +74,8 @@ const AppHeader = () => {
 							<FiSun className="text-gray-200 hover:text-gray-50 text-xl" />
 						)}
 					</div>
-					{/* Theme switcher small screen end */}
 
-					{/* Small screen hamburger menu start */}
+					{/* Small screen hamburger menu */}
 					<div className="sm:hidden">
 						<button
 							onClick={toggleMenu}
@@ -100,11 +96,9 @@ const AppHeader = () => {
 							</svg>
 						</button>
 					</div>
-					{/* Small screen hamburger menu end */}
 				</div>
-				{/* Header menu links and small screen hamburger menu end */}
 
-				{/* Header links small screen start*/}
+				{/* Header links small screen */}
 				<div
 					className={
 						showMenu
@@ -142,9 +136,8 @@ const AppHeader = () => {
 						</button>
 					</div>
 				</div>
-				{/* Header links small screen end */}
 
-				{/* Header links large screen start*/}
+				{/* Header links large screen */}
 				<div className="font-general-medium hidden m-0 sm:ml-4 mt-5 sm:mt-3 sm:flex p-5 sm:p-0 justify-center items-center shadow-lg sm:shadow-none">
 					<Link
 						to="/projects"
@@ -168,11 +161,10 @@ const AppHeader = () => {
 						Contact
 					</Link>
 				</div>
-				{/* Header links small screen end */}
 
-				{/* Header right section buttons start */}
+				{/* Header right section buttons */}
 				<div className="hidden sm:flex justify-between items-center flex-col md:flex-row">
-					{/* Hire me button start */}
+					{/* Hire me button */}
 					<div className="hidden md:flex">
 						<button
 							onClick={showHireMeModal}
@@ -182,9 +174,8 @@ const AppHeader = () => {
 							Hire Me
 						</button>
 					</div>
-					{/* Hire me button end */}
 
-					{/* Theme switcher large screen start */}
+					{/* Theme switcher large screen */}
 					<div
 						onClick={() => setTheme(activeTheme)}
 						aria-label="Theme Switcher"
@@ -196,10 +187,9 @@ const AppHeader = () => {
 							<FiSun className="text-gray-200 hover:text-gray-50 text-xl" />
 						)}
 					</div>
-					{/* Theme switcher large screen start */}
 				</div>
 			</div>
-			{/* Hire me modal start */}
+			{/* Hire me modal */}
 			<div>
 				{showModal ? (
 					<HireMeModal
@@ -209,7 +199,6 @@ const AppHeader = () => {
 				) : null}
 				{showModal ? showHireMeModal : null}
 			</div>
-			{/* Hire me modal end */}
 		</motion.nav>
 	);
 };

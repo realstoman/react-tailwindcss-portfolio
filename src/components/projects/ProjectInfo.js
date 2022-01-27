@@ -7,7 +7,7 @@ const ProjectInfo = () => {
 	return (
 		<div className="block sm:flex gap-0 sm:gap-10 mt-14">
 			<div className="w-full sm:w-1/3 text-left">
-				{/* Single project client details start */}
+				{/* Single project client details */}
 				<div className="mb-7">
 					<p className="font-general-regular text-2xl font-semibold text-secondary-dark dark:text-secondary-light mb-2">
 						{singleProjectData.ProjectInfo.ClientHeading}
@@ -39,9 +39,8 @@ const ProjectInfo = () => {
 						)}
 					</ul>
 				</div>
-				{/* Single project client details end */}
 
-				{/* Single project objectives start */}
+				{/* Single project objectives */}
 				<div className="mb-7">
 					<p className="font-general-regular text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2">
 						{singleProjectData.ProjectInfo.ObjectivesHeading}
@@ -50,9 +49,8 @@ const ProjectInfo = () => {
 						{singleProjectData.ProjectInfo.ObjectivesDetails}
 					</p>
 				</div>
-				{/* Single project objectives end */}
 
-				{/* Single project technologies start */}
+				{/* Single project technologies */}
 				<div className="mb-7">
 					<p className="font-general-regular text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2">
 						{singleProjectData.ProjectInfo.Technologies[0].title}
@@ -63,9 +61,8 @@ const ProjectInfo = () => {
 						)}
 					</p>
 				</div>
-				{/* Single project technologies end */}
 
-				{/* Single project social sharing start */}
+				{/* Single project social sharing */}
 				<div>
 					<p className="font-general-regular text-2xl font-semibold text-ternary-dark dark:text-ternary-light mb-2">
 						{singleProjectData.ProjectInfo.SocialSharingHeading}
@@ -90,11 +87,9 @@ const ProjectInfo = () => {
 						)}
 					</div>
 				</div>
-				{/* Single project social sharing end */}
 			</div>
-			{/*  Single project left section details end */}
 
-			{/*  Single project right section details start */}
+			{/*  Single project right section */}
 			<div className="w-full sm:w-2/3 text-left mt-10 sm:mt-0">
 				<p className="font-general-regular text-primary-dark dark:text-primary-light text-2xl font-bold mb-7">
 					{singleProjectData.ProjectInfo.ProjectDetailsHeading}
@@ -110,7 +105,6 @@ const ProjectInfo = () => {
 					);
 				})}
 			</div>
-			{/* Single project right section details end  */}
 		</div>
 	);
 };
