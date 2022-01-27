@@ -6,6 +6,7 @@ import HireMeModal from '../HireMeModal';
 import logoLight from '../../images/logo-light.svg';
 import logoDark from '../../images/logo-dark.svg';
 import { motion } from 'framer-motion';
+import Button from '../reusable/Button';
 
 const AppHeader = () => {
 	const [showMenu, setShowMenu] = useState(false);
@@ -128,12 +129,13 @@ const AppHeader = () => {
 						Contact
 					</Link>
 					<div className="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark">
-						<button
+						<span
 							onClick={showHireMeModal}
-							className="font-general-medium sm:hidden block text-left text-md bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-sm px-4 py-2 mt-2 duration-300"
+							className="font-general-medium sm:hidden block text-left text-md bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-sm px-4 py-2 mt-2 duration-300 w-24"
+							aria-label="Hire Me Button"
 						>
-							Hire Me
-						</button>
+							<Button title="Hire Me" />
+						</span>
 					</div>
 				</div>
 
@@ -164,15 +166,14 @@ const AppHeader = () => {
 
 				{/* Header right section buttons */}
 				<div className="hidden sm:flex justify-between items-center flex-col md:flex-row">
-					{/* Hire me button */}
 					<div className="hidden md:flex">
-						<button
+						<span
 							onClick={showHireMeModal}
 							className="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
 							aria-label="Hire Me Button"
 						>
-							Hire Me
-						</button>
+							<Button title="Hire Me" />
+						</span>
 					</div>
 
 					{/* Theme switcher large screen */}
