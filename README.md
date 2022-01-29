@@ -53,10 +53,10 @@ cd react-tailwindcss-portfolio
 4. ##### Install packages and dependencies:
 
 ```
-yarn install
+yarn
 ```
 
-4. NOTES: If you don't have yarn installed, install it globally using npm:
+4. NOTE: If you don't have yarn installed, you can install it globally using npm:
 
 ```
 npm install --global yarn
