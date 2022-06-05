@@ -10,8 +10,8 @@ A simple portfolio starter theme built with React and Tailwind CSS. This is the 
 
 ## Features
 
--   [React](https://reactjs.org) with [React Router v6](https://reactrouter.com)
--   [Tailwind CSS v2](https://tailwindcss.com)
+-   [React v18](https://reactjs.org) with [React Router v6](https://reactrouter.com)
+-   [Tailwind CSS v3](https://tailwindcss.com)
 -   Context API For State Management
 -   Custom Hooks
 -   Framer Motion transitions & animations
