@@ -18,10 +18,11 @@
 		"web-vitals": "^1.0.1"
 	},
 	"scripts": {
-		"start": "react-scripts start",
-		"build": "react-scripts build",
-		"test": "react-scripts test --env=jsdom",
-		"eject": "react-scripts eject"
+		"start": "yarn run build:css && react-scripts start",
+		"build": "yarn run build:css && react-scripts build",
+		"test": "react-scripts test",
+		"eject": "react-scripts eject",
+		"build:css": "postcss src/css/tailwind.css -o src/css/main.css"
 	},
 	"eslintConfig": {
 		"extends": [

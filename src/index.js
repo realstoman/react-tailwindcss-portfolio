@@ -1,4 +1,4 @@
-import './index.css';
+import './css/tailwind.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
