@@ -14,6 +14,7 @@ A simple portfolio starter theme built with React and Tailwind CSS. This is the 
 -   [Tailwind CSS v3](https://tailwindcss.com)
 -   Context API For State Management
 -   Custom Hooks
+-   Unit Testing
 -   Framer Motion transitions & animations
 -   Reusable components
 -   Dark mode
@@ -66,6 +67,12 @@ npm install --global yarn
 
 ```
 yarn start
+```
+
+6. ##### Run tests:
+
+```
+yarn test
 ```
 
 ## Notes
