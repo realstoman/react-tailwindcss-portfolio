@@ -4,10 +4,10 @@ import AppFooter from './components/shared/AppFooter';
 import AppHeader from './components/shared/AppHeader';
 import './css/App.css';
 import About from './pages/AboutMe';
-import Contact from './pages/Contact';
+import Contact from './pages/Contact.jsx';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
-import ProjectSingle from './pages/ProjectSingle';
+import ProjectSingle from './pages/ProjectSingle.jsx';
 import { AnimatePresence } from 'framer-motion';
 import UseScrollToTop from './hooks/useScrollToTop';
 
