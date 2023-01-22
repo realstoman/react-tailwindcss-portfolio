@@ -1,4 +1,5 @@
 import { useCountUp } from 'react-countup';
+import CounterItem from './CounterItem';
 
 const AboutCounter = () => {
 	useCountUp({ ref: 'experienceCounter', end: 12, duration: 2 });
@@ -9,42 +10,29 @@ const AboutCounter = () => {
 	return (
 		<div className="mt-10 sm:mt-20 bg-primary-light dark:bg-ternary-dark shadow-sm">
 			<div className="font-general-medium container mx-auto py-20 block sm:flex sm:justify-between items-center">
-				<div className="mb-20 sm:mb-0">
-					<h2 className="text-4xl text-center text-secondary-dark dark:text-secondary-light mb-2">
-						<span id="experienceCounter" />
-					</h2>
-					<span className="font-general-regular block text-md text-center text-ternary-dark dark:text-ternary-light">
-						Years of experience
-					</span>
-				</div>
+				<CounterItem
+					title="Years of experience"
+					counter={<span id="experienceCounter" />}
+					measurement=""
+				/>
 
-				<div className="mb-20 sm:mb-0">
-					<h2 className="text-4xl text-center text-secondary-dark dark:text-secondary-light mb-2">
-						<span id="githubStarsCounter" />
-						k+
-					</h2>
-					<span className="font-general-regular block text-md text-center text-ternary-dark dark:text-ternary-light">
-						Stars on GitHub
-					</span>
-				</div>
+				<CounterItem
+					title="Stars on GitHub"
+					counter={<span id="githubStarsCounter" />}
+					measurement="k+"
+				/>
 
-				<div className="mb-20 sm:mb-0">
-					<h2 className="text-4xl text-center text-secondary-dark dark:text-secondary-light mb-2">
-						<span id="feedbackCounter" /> %
-					</h2>
-					<span className="font-general-regular block text-md text-center text-ternary-dark dark:text-ternary-light">
-						Positive feedback
-					</span>
-				</div>
+				<CounterItem
+					title="Positive feedback"
+					counter={<span id="feedbackCounter" />}
+					measurement="%"
+				/>
 
-				<div className="mb-20 sm:mb-0">
-					<h2 className="text-4xl text-center text-secondary-dark dark:text-secondary-light mb-2">
-						<span id="projectsCounter" /> %
-					</h2>
-					<span className="font-general-regular block text-md text-center text-ternary-dark dark:text-ternary-light">
-						Projects completed
-					</span>
-				</div>
+				<CounterItem
+					title="Projects completed"
+					counter={<span id="projectsCounter" />}
+					measurement="%"
+				/>
 			</div>
 		</div>
 	);
