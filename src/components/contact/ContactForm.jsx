@@ -1,4 +1,5 @@
 import Button from '../reusable/Button';
+import FormInput from '../reusable/FormInput';
 
 const ContactForm = () => {
 	return (
@@ -13,57 +14,33 @@ const ContactForm = () => {
 					<p className="font-general-medium text-primary-dark dark:text-primary-light text-2xl mb-8">
 						Contact Form
 					</p>
-					<div className="font-general-regular">
-						<label
-							className="block text-lg text-primary-dark dark:text-primary-light mb-2"
-							htmlFor="name"
-						>
-							Full Name
-						</label>
-						<input
-							className="w-full px-5 py-2 border border-gray-300 dark:border-primary-dark border-opacity-50 text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md"
-							id="name"
-							name="name"
-							type="text"
-							required
-							placeholder="Your Name"
-							aria-label="Name"
-						/>
-					</div>
-					<div className="mt-6">
-						<label
-							className="block text-lg text-primary-dark dark:text-primary-light mb-2"
-							htmlFor="email"
-						>
-							Email
-						</label>
-						<input
-							className="w-full px-5 py-2 border border-gray-300 dark:border-primary-dark border-opacity-50 text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md"
-							id="email"
-							name="email"
-							type="text"
-							required
-							placeholder="Your Email"
-							aria-label="Email"
-						/>
-					</div>
-					<div className="mt-6">
-						<label
-							className="block text-lg text-primary-dark dark:text-primary-light mb-2"
-							htmlFor="subject"
-						>
-							Subject
-						</label>
-						<input
-							className="w-full px-5 py-2 border border-gray-300 dark:border-primary-dark border-opacity-50 text-primary-dark dark:text-secondary-light bg-ternary-light dark:bg-ternary-dark rounded-md shadow-sm text-md"
-							id="subject"
-							name="subject"
-							type="text"
-							required
-							placeholder="Subject"
-							aria-label="Subject"
-						/>
-					</div>
+					<FormInput
+						inputLabel="Full Name"
+						labelFor="name"
+						inputType="text"
+						inputId="name"
+						inputName="name"
+						placeholderText="Your Name"
+						ariaLabelName="Name"
+					/>
+					<FormInput
+						inputLabel="Email"
+						labelFor="email"
+						inputType="email"
+						inputId="email"
+						inputName="email"
+						placeholderText="Your email"
+						ariaLabelName="Email"
+					/>
+					<FormInput
+						inputLabel="Subject"
+						labelFor="subject"
+						inputType="text"
+						inputId="subject"
+						inputName="subject"
+						placeholderText="Subject"
+						ariaLabelName="Subject"
+					/>
 
 					<div className="mt-6">
 						<label
