@@ -27,7 +27,11 @@ A simple portfolio starter theme built with React and Tailwind CSS. This is the 
 -   Download file button
 -   Simple and responsive design
 
-## Installation
+## To Contribute to this project:
+
+[See Contribution Guidlines](https://github.com/realstoman/react-tailwindcss-portfolio/blob/main/CONTRIBUTING.md)
+
+## Setup
 
 1. ##### Make sure you have Node JS installed. If you don't have it:
 
@@ -84,3 +88,6 @@ yarn test
 -   Images from [Unsplash](https://unsplash.com)
 -   Feel free to use it as your own portfolio
 -   Contributions are welcome
+
+### License
+[MIT](https://github.com/realstoman/react-tailwindcss-portfolio/blob/main/LICENSE)
