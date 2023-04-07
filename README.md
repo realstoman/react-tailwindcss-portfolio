@@ -8,6 +8,12 @@ A simple portfolio starter theme built with React and Tailwind CSS. This is the 
 
 [https://react-tailwindcss-portfolio.netlify.app](https://react-tailwindcss-portfolio.netlify.app)
 
+## Other versions of this project
+
+-   Next.js Version: [https://github.com/realstoman/nextjs-tailwindcss-portfolio](https://github.com/realstoman/nextjs-tailwindcss-portfolio)
+-   Vue.js Version: [https://github.com/realstoman/vuejs-tailwindcss-portfolio](https://github.com/realstoman/vuejs-tailwindcss-portfolio)
+-   Nuxt.js Version: [https://github.com/realstoman/nuxtjs-tailwindcss-portfolio](https://github.com/realstoman/nuxtjs-tailwindcss-portfolio)
+
 ## Features
 
 -   [React v18](https://reactjs.org) with [React Router v6](https://reactrouter.com)
@@ -88,4 +94,5 @@ yarn test
 -   Contributions are welcome
 
 ### License
+
 [MIT](https://github.com/realstoman/react-tailwindcss-portfolio/blob/main/LICENSE)
