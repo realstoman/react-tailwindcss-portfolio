@@ -7,10 +7,10 @@ import Button from '../components/reusable/Button';
 const Home = () => {
 	return (
 		<div className="container mx-auto">
-			<AppBanner></AppBanner>
+			<AppBanner/>
 
 			<ProjectsProvider>
-				<ProjectsGrid></ProjectsGrid>
+				<ProjectsGrid/>
 			</ProjectsProvider>
 
 			<div className="mt-8 sm:mt-10 flex justify-center">
