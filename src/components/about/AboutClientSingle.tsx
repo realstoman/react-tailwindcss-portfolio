@@ -1,0 +1,15 @@
+import React from "react";
+
+const AboutClientSingle: React.FC<{ title: string, image: any }> = ({title, image}) => {
+  return (
+    <>
+      <img
+        src={image}
+        className="w-64 py-5 px-10 border bg-secondary-light border-ternary-light dark:border-ternary-dark shadow-sm rounded-lg mb-8 cursor-pointer"
+        alt={title}
+      />
+    </>
+  );
+};
+
+export default AboutClientSingle;
