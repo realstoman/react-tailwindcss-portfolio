@@ -1,10 +1,11 @@
-import React, { ChangeEvent } from "react";
+import React from "react";
 
-const selectOptions = [
-  'Web Application',
-  'Mobile Application',
-  'UI/UX Design',
-  'Branding',
+export const selectOptions = [
+  'Aplicações web',
+  'Aplicações mobile',
+  'Bots',
+  'Scritps',
+  'Consultoria'
 ];
 
 const ProjectsFilter: React.FC<{
@@ -32,7 +33,7 @@ const ProjectsFilter: React.FC<{
             "
     >
       <option value="All Projects" className="text-sm sm:text-md">
-        All Projects
+        Todos os projetos
       </option>
       
       {selectOptions.map((option) => (

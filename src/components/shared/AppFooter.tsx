@@ -1,9 +1,8 @@
 import {
 	FiGithub,
-	FiTwitter,
 	FiLinkedin,
 	FiGlobe,
-	FiYoutube,
+	FiYoutube, FiFacebook, FiInstagram, FiCode,
 } from 'react-icons/fi';
 import AppFooterCopyright from './AppFooterCopyright';
 import React from "react";
@@ -11,29 +10,39 @@ import React from "react";
 const socialLinks = [
 	{
 		id: 1,
-		icon: <FiGlobe />,
-		url: 'https://www.stoman.me/',
+		icon: <FiGithub />,
+		url: 'https://github.com/ronicley',
 	},
 	{
 		id: 2,
-		icon: <FiGithub />,
-		url: 'https://github.com/realstoman',
+		icon: <FiLinkedin />,
+		url: 'https://www.linkedin.com/in/ronicley-silva',
 	},
 	{
 		id: 3,
-		icon: <FiTwitter />,
-		url: 'https://twitter.com/realstoman',
+		icon: <FiYoutube />,
+		url: 'https://www.youtube.com/c/Ronicleyrider',
 	},
 	{
 		id: 4,
-		icon: <FiLinkedin />,
-		url: 'https://www.linkedin.com/in/realstoman',
+		icon: <FiGlobe />,
+		url: 'https://lattes.cnpq.br/1944145599418071'
 	},
 	{
 		id: 5,
-		icon: <FiYoutube />,
-		url: 'https://www.youtube.com/c/realstoman',
+		icon: <FiFacebook />,
+		url: 'https://www.facebook.com/ronicley.silvadesa/'
 	},
+	{
+		id: 6,
+		icon: <FiInstagram />,
+		url: 'https://www.instagram.com/ronicleysilvasa/'
+	},
+	{
+		id: 7,
+		icon: <FiCode />,
+		url: 'https://dev.to/ronicley'
+	}
 ];
 
 const AppFooter: React.FC = () => {
@@ -43,7 +52,7 @@ const AppFooter: React.FC = () => {
 				{/* Footer social links */}
 				<div className="font-general-regular flex flex-col justify-center items-center mb-12 sm:mb-28">
 					<p className="text-3xl sm:text-4xl text-primary-dark dark:text-primary-light mb-5">
-						Follow me
+						Redes sociais
 					</p>
 					<ul className="flex gap-4 sm:gap-8">
 						{socialLinks.map((link) => (

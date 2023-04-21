@@ -8,7 +8,7 @@ const AppFooterCopyright: React.FC = () => {
 					target="__blank"
 					className="hover:underline hover:text-indigo-600 dark:hover:text-indigo-300 ml-1 duration-500"
 				>
-					React & Tailwind CSS Portfolio
+					Projeto original desenvolvido por Stoman
 				</a>
 				.
 				<a
@@ -16,7 +16,7 @@ const AppFooterCopyright: React.FC = () => {
 					target="__blank"
 					className="text-secondary-dark dark:text-secondary-light font-medium uppercase hover:underline hover:text-indigo-600 dark:hover:text-indigo-300 ml-1 duration-500"
 				>
-					Stoman
+					Ronicley
 				</a>
 			</div>
 		</div>

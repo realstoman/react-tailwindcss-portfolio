@@ -19,7 +19,7 @@ const ProjectsGrid: React.FC = () => {
     <section className="py-5 sm:py-10 mt-5 sm:mt-10">
       <div className="text-center">
         <p className="font-general-medium text-2xl sm:text-4xl mb-1 text-ternary-dark dark:text-ternary-light">
-          Projects portfolio
+          Portfolio
         </p>
       </div>
       
@@ -33,7 +33,7 @@ const ProjectsGrid: React.FC = () => {
                         mb-3
                         "
         >
-          Search projects by title or filter by category
+          Pesquise pelo título ou filtre pela categoria
         </h3>
         <div
           className="
@@ -83,8 +83,8 @@ const ProjectsGrid: React.FC = () => {
               id="name"
               name="name"
               type="search"
-              placeholder="Search Projects"
-              aria-label="Name"
+              placeholder="Buscar projetos"
+              aria-label="search"
             />
           </div>
           

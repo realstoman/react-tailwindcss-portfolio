@@ -2,13 +2,7 @@ import { motion } from 'framer-motion';
 import { FiX } from 'react-icons/fi';
 import Button from './reusable/Button';
 import React from "react";
-
-const selectOptions = [
-  'Web Application',
-  'Mobile Application',
-  'UI/UX Design',
-  'Branding',
-];
+import { selectOptions } from "./projects/ProjectsFilter";
 
 const HireMeModal: React.FC<{
   onClose?: () => void;
@@ -32,7 +26,7 @@ const HireMeModal: React.FC<{
             <div
               className="modal-header flex justify-between gap-10 p-5 border-b border-ternary-light dark:border-ternary-dark">
               <h5 className=" text-primary-dark dark:text-primary-light text-xl">
-                What project are you looking for?
+                Qual projeto está buscando desenvolver?
               </h5>
               <button
                 onClick={onClose}
@@ -54,8 +48,8 @@ const HireMeModal: React.FC<{
                     id="name"
                     name="name"
                     type="text"
-                    placeholder="Name"
-                    aria-label="Name"
+                    placeholder="Nome"
+                    aria-label="Nome"
                   />
                 </div>
                 <div className="mt-6">
@@ -93,8 +87,8 @@ const HireMeModal: React.FC<{
                     name="message"
                     cols={14}
                     rows={6}
-                    aria-label="Details"
-                    placeholder="Project description"
+                    aria-label="Detalhes"
+                    placeholder="Forneça uma breve descrição do projeto"
                   />
                 </div>
                 
@@ -111,9 +105,9 @@ const HireMeModal: React.FC<{
 											hover:bg-indigo-600
 											rounded-md
 											focus:ring-1 focus:ring-indigo-900 duration-500"
-                    aria-label="Submit Request"
+                    aria-label="Enviar"
                   >
-                    <Button title="Send Request"/>
+                    <Button title="Enviar" />
                   </button>
                 </div>
               </form>
@@ -127,9 +121,9 @@ const HireMeModal: React.FC<{
 									py-2 bg-gray-600 text-primary-light hover:bg-ternary-dark dark:bg-gray-200 dark:text-secondary-dark dark:hover:bg-primary-light
 									rounded-md
 									focus:ring-1 focus:ring-indigo-900 duration-500"
-                aria-label="Close Modal"
+                aria-label="Fechar"
               >
-                <Button title="Close"/>
+                <Button title="Fechar"/>
               </button>
             </div>
           </div>

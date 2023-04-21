@@ -1,4 +1,4 @@
-import profileImage from '../../images/profile.jpeg';
+import profileImage from '../../images/profile.jpg';
 import React, { useContext } from 'react';
 import AboutMeContext from '../../context/AboutMeContext';
 

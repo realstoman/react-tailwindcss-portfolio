@@ -3,8 +3,7 @@ import { FiMenu, FiMoon, FiSun, FiX } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 import HireMeModal from '../HireMeModal';
-import logoLight from '../../images/logo-light.svg';
-import logoDark from '../../images/logo-dark.svg';
+import logo from '../../images/logo72.png';
 import { motion } from 'framer-motion';
 import Button from '../reusable/Button';
 
@@ -13,7 +12,7 @@ const AppHeader: React.FC = () => {
 	const [showModal, setShowModal] = useState<boolean>(false);
 	const [activeTheme, setTheme] = useThemeSwitcher();
 
-	function toggleMenu() {
+	const toggleMenu = () => {
 		if (!showMenu) {
 			setShowMenu(true);
 		} else {
@@ -21,7 +20,7 @@ const AppHeader: React.FC = () => {
 		}
 	}
 
-	function showHireMeModal() {
+	const showHireMeModal = () => {
 		if (!showModal) {
 			document
 				.getElementsByTagName('html')[0]
@@ -47,19 +46,11 @@ const AppHeader: React.FC = () => {
 				<div className="flex justify-between items-center px-4 sm:px-0">
 					<div>
 						<Link to="/">
-							{activeTheme === 'dark' ? (
-								<img
-									src={logoDark}
-									className="w-36"
-									alt="Dark Logo"
-								/>
-							) : (
-								<img
-									src={logoLight}
-									className="w-36"
-									alt="Dark Logo"
-								/>
-							)}
+							<img
+								src={logo}
+								className="w-2.5"
+								alt="Dark Logo"
+							/>
 						</Link>
 					</div>
 
@@ -112,21 +103,28 @@ const AppHeader: React.FC = () => {
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
 						aria-label="Projects"
 					>
-						Projects
+						Projetos
 					</Link>
 					<Link
 						to="/about"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
 						aria-label="About Me"
 					>
-						About Me
+						Sobre mim
 					</Link>
 					<Link
 						to="/contact"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
 						aria-label="Contact"
 					>
-						Contact
+						Contato
+					</Link>
+					<Link
+						to="/contact"
+						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2 border-t-2 pt-3 sm:pt-2 sm:border-t-0 border-primary-light dark:border-secondary-dark"
+						aria-label="Contact"
+					>
+						Blog
 					</Link>
 					<div className="border-t-2 pt-3 sm:pt-0 sm:border-t-0 border-primary-light dark:border-secondary-dark">
 						<span
@@ -134,7 +132,7 @@ const AppHeader: React.FC = () => {
 							className="font-general-medium sm:hidden block text-left text-md bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-sm px-4 py-2 mt-2 duration-300 w-24"
 							aria-label="Hire Me Button"
 						>
-							<Button title="Hire Me" />
+							<Button title="Contratar" />
 						</span>
 					</div>
 				</div>
@@ -146,21 +144,28 @@ const AppHeader: React.FC = () => {
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
 						aria-label="Projects"
 					>
-						Projects
+						Projetos
 					</Link>
 					<Link
 						to="/about"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
 						aria-label="About Me"
 					>
-						About Me
+						Sobre mim
 					</Link>
 					<Link
 						to="/contact"
 						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
 						aria-label="Contact"
 					>
-						Contact
+						Contato
+					</Link>
+					<Link
+						to="/"
+						className="block text-left text-lg text-primary-dark dark:text-ternary-light hover:text-secondary-dark dark:hover:text-secondary-light  sm:mx-4 mb-2 sm:py-2"
+						aria-label="Contact"
+					>
+						Blog
 					</Link>
 				</div>
 
@@ -172,7 +177,7 @@ const AppHeader: React.FC = () => {
 							className="text-md font-general-medium bg-indigo-500 hover:bg-indigo-600 text-white shadow-sm rounded-md px-5 py-2.5 duration-300"
 							aria-label="Hire Me Button"
 						>
-							<Button title="Hire Me" />
+							<Button title="Contratar" />
 						</span>
 					</div>
 
