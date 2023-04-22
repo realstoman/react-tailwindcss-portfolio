@@ -3,7 +3,8 @@ import { FiMenu, FiMoon, FiSun, FiX } from 'react-icons/fi';
 import { Link } from 'react-router-dom';
 import useThemeSwitcher from '../../hooks/useThemeSwitcher';
 import HireMeModal from '../HireMeModal';
-import logo from '../../images/logo72.png';
+import logoWhite from '../../images/ronicley-website-favicon-white.png';
+import logoDark from '../../images/ronicley-website-favicon-black.png';
 import { motion } from 'framer-motion';
 import Button from '../reusable/Button';
 
@@ -45,13 +46,19 @@ const AppHeader: React.FC = () => {
 				{/* Header menu links and small screen hamburger menu */}
 				<div className="flex justify-between items-center px-4 sm:px-0">
 					<div>
-						<Link to="/">
+						{activeTheme === 'dark' ? (
 							<img
-								src={logo}
-								className="w-2.5"
+								src={logoDark}
+								className="w-8"
 								alt="Dark Logo"
 							/>
-						</Link>
+						) : (
+							<img
+								src={logoWhite}
+								className="w-8"
+								alt="Dark Logo"
+							/>
+						)}
 					</div>
 
 					{/* Theme switcher small screen */}

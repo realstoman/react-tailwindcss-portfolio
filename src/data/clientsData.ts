@@ -1,14 +1,13 @@
 // Import images
-import AmazonImage from '../images/brands/amazon_gray.png';
-import SonyImage from '../images/brands/sony_gray.png';
-import AdidasImage from '../images/brands/adidas_gray.png';
-import FilaImage from '../images/brands/fila_gray.png';
-import NBImage from '../images/brands/nb_gray.png';
+import CRP from '../images/brands/crpjpg.jpg';
+import Iphan from '../images/brands/iphanjpg.jpg';
+import Freelancer from '../images/brands/freelancer.png';
+import Nuvidio from '../images/brands/nuvidiojpg.jpg';
+import UseJobs from '../images/brands/jobsjpg.jpg';
 import SamsungImage from '../images/brands/samsung_gray.png';
-import CanonImage from '../images/brands/canon_gray.png';
-import PumaImage from '../images/brands/puma_gray.png';
+import Adapec from '../images/brands/adapec.jpg';
 
-export const clientsHeading = 'Some of the brands that trust me';
+export const clientsHeading = 'Empresas que ja passei';
 
 export interface ClientsData {
 	id: number;
@@ -19,42 +18,42 @@ export interface ClientsData {
 export const clientsData = [
 	{
 		id: 1,
-		title: 'Amazon',
-		img: AmazonImage,
+		title: 'CRP Tecnologia',
+		img: CRP,
 	},
 	{
 		id: 2,
-		title: 'Sony',
-		img: SonyImage,
+		title: 'Nuvidio',
+		img: Nuvidio,
 	},
 	{
 		id: 3,
-		title: 'Adidas',
-		img: AdidasImage,
+		title: 'Iphan',
+		img: Iphan,
 	},
 	{
 		id: 4,
-		title: 'FILA',
-		img: FilaImage,
+		title: 'Logpay',
+		img: Freelancer,
 	},
 	{
 		id: 5,
-		title: 'NB',
-		img: NBImage,
+		title: 'Go smartcity',
+		img: Freelancer,
 	},
 	{
 		id: 6,
-		title: 'SAMSUNG',
-		img: SamsungImage,
+		title: 'UseJobs',
+		img: UseJobs,
 	},
 	{
 		id: 7,
-		title: 'CANON',
-		img: CanonImage,
+		title: 'Da um trato',
+		img: Freelancer,
 	},
 	{
 		id: 8,
-		title: 'PUMA',
-		img: PumaImage,
+		title: 'ADAPEC',
+		img: Adapec,
 	},
 ];
