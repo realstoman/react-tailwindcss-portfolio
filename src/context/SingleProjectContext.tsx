@@ -1,15 +1,15 @@
 import React, { createContext, PropsWithChildren, useState } from 'react';
-import { SingleProjectData, singleProjectData as singleProjectDataJson } from '../data/singleProjectData';
+import { SingleProjectData, projectsData as projectsDataJson } from '../data/singleProjectData';
 
 interface ISingleProjectContext {
-  setSingleProjectData: React.Dispatch<React.SetStateAction<SingleProjectData>>;
-  singleProjectData: SingleProjectData;
+  setSingleProjectData: React.Dispatch<React.SetStateAction<SingleProjectData[]>>;
+  singleProjectData: SingleProjectData[];
 }
 
 const SingleProjectContext = createContext<ISingleProjectContext>(null!);
 
 export const SingleProjectProvider: React.FC<PropsWithChildren> = ({children}) => {
-  const [singleProjectData, setSingleProjectData] = useState<SingleProjectData>(singleProjectDataJson);
+  const [singleProjectData, setSingleProjectData] = useState<SingleProjectData[]>(projectsDataJson);
   
   return (
     <SingleProjectContext.Provider

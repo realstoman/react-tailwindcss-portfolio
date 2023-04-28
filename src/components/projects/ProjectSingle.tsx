@@ -2,7 +2,9 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import React from "react";
 
-const ProjectSingle: React.FC<{ title?: string; category?: string; image?: any }> = ({ title, category, image }) => {
+interface ProjectSingleProps { title?: string; category?: string; image?: any, id?: number }
+
+const ProjectSingle: React.FC<ProjectSingleProps> = ({ title, category, image, id }) => {
 	return (
 		<motion.div
 			initial={{ opacity: 0 }}
@@ -14,7 +16,7 @@ const ProjectSingle: React.FC<{ title?: string; category?: string; image?: any }
 				delay: 0.15,
 			}}
 		>
-			<Link to="/projects/single-project" aria-label="Single Project">
+			<Link to={`/projects/single-project/${id}`} aria-label="Single Project">
 				<div className="rounded-xl shadow-lg hover:shadow-xl cursor-pointer mb-10 sm:mb-0 bg-secondary-light dark:bg-ternary-dark">
 					<div>
 						<img

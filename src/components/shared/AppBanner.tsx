@@ -26,7 +26,7 @@ const AppBanner: React.FC = () => {
 					}}
 					className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase"
 				>
-					Olá, sou Ronicley
+					Sou Ronicley
 				</motion.h1>
 				<motion.p
 					initial={{ opacity: 0 }}
