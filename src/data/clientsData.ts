@@ -4,7 +4,6 @@ import Iphan from '../images/brands/iphanjpg.jpg';
 import Freelancer from '../images/brands/freelancer.png';
 import Nuvidio from '../images/brands/nuvidiojpg.jpg';
 import UseJobs from '../images/brands/jobsjpg.jpg';
-import SamsungImage from '../images/brands/samsung_gray.png';
 import Adapec from '../images/brands/adapec.jpg';
 
 export const clientsHeading = 'Empresas que ja passei';
