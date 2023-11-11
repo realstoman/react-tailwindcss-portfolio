@@ -1,18 +1,10 @@
-# React & TailwindCSS Portfolio - With Dark Mode
+# NorthSoft.se
 
-A simple portfolio starter theme built with React and Tailwind CSS. This is the React version of [vuejs-tailwindcss-portfolio](https://github.com/realstoman/vuejs-tailwindcss-portfolio).
+A simple portfolio built with React and Tailwind CSS.
 
-![React-TailwindCSS-Portfolio](https://user-images.githubusercontent.com/16396664/146666086-28e88beb-c2f0-431f-adfb-2396d8f64c80.png)
+## URL
 
-## Demo URL
-
-[https://react-tailwindcss-portfolio.netlify.app](https://react-tailwindcss-portfolio.netlify.app)
-
-## Other versions of this project
-
--   Next.js Version: [https://github.com/realstoman/nextjs-tailwindcss-portfolio](https://github.com/realstoman/nextjs-tailwindcss-portfolio)
--   Vue.js Version: [https://github.com/realstoman/vuejs-tailwindcss-portfolio](https://github.com/realstoman/vuejs-tailwindcss-portfolio)
--   Nuxt.js Version: [https://github.com/realstoman/nuxtjs-tailwindcss-portfolio](https://github.com/realstoman/nuxtjs-tailwindcss-portfolio)
+[northsoft.se](https://northsoft.se)
 
 ## Features
 
@@ -33,8 +25,6 @@ A simple portfolio starter theme built with React and Tailwind CSS. This is the 
 -   Download file button
 -   Simple and responsive design
 
-### To Contribute to this project, read the [Contribution Guidlines](https://github.com/realstoman/react-tailwindcss-portfolio/blob/main/CONTRIBUTING.md)
-
 ## Setup
 
 1. Make sure you have Node JS installed. If you don't have it:
@@ -50,13 +40,13 @@ brew install node
 2. Clone the repo:
 
 ```
-git clone https://github.com/realstoman/react-tailwindcss-portfolio.git
+git clone https://github.com/NorthSoft-io/northsoft.se.git
 ```
 
 3. Open the project folder:
 
 ```
-cd react-tailwindcss-portfolio
+cd northsoft.se
 ```
 
 4. Install packages and dependencies:
@@ -91,7 +81,6 @@ yarn test
 -   Illustrations from [unDraw](https://undraw.co) and [Freepik](https://freepik.com)
 -   Images from [Unsplash](https://unsplash.com)
 -   Feel free to use it as your own portfolio
--   Contributions are welcome
 
 ### License
 
