@@ -1,6 +1,6 @@
 /*== 
  * React & TailwindCSS Portfolio Main CSS File
- * Powered by: @realstoman
+ * Powered by: @guesung
 */
 
 body {
@@ -231,4 +231,9 @@ body {
 	100% {
 		opacity: 0.5;
 	}
+}
+
+* {
+  white-space: pre-line;
+
 }

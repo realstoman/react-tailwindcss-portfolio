@@ -1,10 +1,18 @@
 export const aboutMeData = [
-	{
-		id: 1,
-		bio: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt totam dolorum, ducimus obcaecati, voluptas facilis molestias nobis ut quam natus similique inventore excepturi optio ipsa deleniti fugit illo. Unde, amet! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum illo necessitatibus perspiciatis! Aperiam perferendis labore temporibus, eos culpa corporis recusandae quas, fuga voluptatibus nesciunt odit libero tenetur neque consequatur ea.',
-	},
-	{
-		id: 2,
-		bio: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil vel illum asperiores dignissimos cumque quibusdam et fugiat voluptatem nobis suscipit explicabo, eaque consequatur nesciunt, fugit eligendi corporis laudantium adipisci soluta?',
-	},
+  {
+    id: 1,
+    bio: `저는 개발의 즐거움을 재발견하기 위해 자기 관리에 특별히 시간을 할애합니다. 외주 작업을 하면서 한 페이지의 개발 과정에 너무 익숙해져, 반복적인 코드 작성으로 인해 제 개발 능력이 정체되는 것을 느꼈습니다. 이 과정에서 느낀 불만족스러움이 작업에 부정적인 영향을 끼친다고 생각했습니다. 
+
+		따라서, 단순히 반복적인 작업에서 벗어나기 위해, 저는 개발에 대한 시적 접근을 탐구하고, 품질 높은 코드 작성을 위한 끊임없는 노력을 기울였습니다. 또한, 다양한 기술을 연구하고 여러 관점에서 그들을 비교 분석함으로써, 각각의 작업에 가장 적합한 해결책을 찾아 적용하는 데 중점을 두었습니다. 
+		
+		개발 실력 향상만큼이나 중요한 것이 자기 관리라는 사실을 깨달았기에, 단순히 개발에만 몰두하기보다는 일정한 시간을 자기 관리에도 할애하기 시작했습니다. 정해진 시간에는 운동이나 취미 생활에 몰두하여 잠시라도 개발의 압박에서 벗어나 마음을 편안하게 하였습니다. 이러한 균형 잡힌 접근 방식을 통해 정신적, 육체적 재충전을 하고, 다음 작업에 대한 기대감을 유지함으로써, 더욱 즐겁고 효율적인 개발을 추구할 수 있게 되었습니다.`,
+  },
+  {
+    id: 2,
+    bio: `저는 스스로의 성장을 위해 지속적인 자기성찰을 중요하게 생각하며, 이를 위해 과거의 경험과 기록을 깊이 있는 통찰의 원천으로 활용합니다. 일상의 다양한 순간들을 세밀하게 기록함으로써, 제가 겪은 경험들은 단순한 추억을 넘어 성찰의 자료가 됩니다. 이러한 기록들은 나중에 되돌아봄으로써, 지난 행동들을 객관적인 시각으로 재평가하고, 스스로의 감정과 행동에 대해 깊이 파악하는 기회를 제공합니다.
+
+		기록을 통한 회고는 저에게 어떤 부분이 부족했는지, 무엇이 잘못되었는지를 명확히 인식할 수 있게 해줍니다. 이 과정에서 저는 단순히 문제점을 파악하는 것을 넘어, 그 원인을 이해하고, 더 나은 대안을 모색하며, 앞으로 어떻게 행동해야 할지에 대한 방향을 잡을 수 있습니다. 이는 저의 개인적이며 전문적인 발전을 위한 핵심 전략이자, 끊임없이 성장하고, 변화하는 삶을 지향하는 데 있어 결정적인 역할을 합니다.
+		
+		더 나아가, 이 기록들은 저의 삶 속에서 단순히 지나간 이야기가 아닌, 미래를 형성하는 데 중요한 역할을 하는 가치 있는 자산입니다. 스스로의 과거를 통해 배운 교훈들은 앞선 결정을 내릴 때 근거가 되고, 더 나은 내일로 나아가는 길잡이가 됩니다. 이런 방식으로, 저는 지속적인 자기 개선을 통해 개인적인 성장을 추구하며, 삶의 질을 향상시키기 위한 노력을 게을리하지 않습니다.`,
+  },
 ];
