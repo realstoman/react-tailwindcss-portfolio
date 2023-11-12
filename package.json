@@ -1,53 +1,53 @@
 {
-	"name": "react-tailwindcss-portfolio",
-	"version": "0.1.0",
-	"private": true,
-	"dependencies": {
-		"@testing-library/jest-dom": "^5.16.5",
-		"@testing-library/react": "^13.4.0",
-		"@testing-library/user-event": "^14.4.3",
-		"framer-motion": "4.1.17",
-		"postcss-cli": "^10.1.0",
-		"react": "^18.1.0",
-		"react-countup": "^6.1.1",
-		"react-dom": "^18.1.0",
-		"react-icons": "^4.3.1",
-		"react-router-dom": "^6.0.2",
-		"react-scripts": "4.0.3",
-		"react-scroll": "^1.8.4",
-		"styled-components": "^5.3.3",
-		"web-vitals": "^1.0.1"
-	},
-	"scripts": {
-		"start": "react-scripts --openssl-legacy-provider start",
-		"build": "yarn run react-scripts build",
-		"test": "react-scripts test",
-		"eject": "react-scripts eject",
-		"build:css": "postcss src/css/tailwind.css -o src/css/main.css"
-	},
-	"eslintConfig": {
-		"extends": [
-			"react-app",
-			"react-app/jest"
-		]
-	},
-	"browserslist": {
-		"production": [
-			">0.2%",
-			"not dead",
-			"not op_mini all"
-		],
-		"development": [
-			"last 1 chrome version",
-			"last 1 firefox version",
-			"last 1 safari version"
-		]
-	},
-	"devDependencies": {
-		"@tailwindcss/forms": "^0.5.2",
-		"@testing-library/dom": "^8.20.0",
-		"autoprefixer": "^10.4.7",
-		"postcss": "^8.4.21",
-		"tailwindcss": "^3.0.24"
-	}
+  "name": "react-tailwindcss-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^14.4.3",
+    "framer-motion": "4.1.17",
+    "postcss-cli": "^10.1.0",
+    "react": "^18.1.0",
+    "react-countup": "^6.1.1",
+    "react-dom": "^18.1.0",
+    "react-icons": "^4.3.1",
+    "react-router-dom": "^6.0.2",
+    "react-scripts": "4.0.3",
+    "react-scroll": "^1.8.4",
+    "styled-components": "^5.3.3",
+    "web-vitals": "^1.0.1"
+  },
+  "scripts": {
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "yarn run react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "build:css": "postcss src/css/tailwind.css -o src/css/main.css"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.2",
+    "@testing-library/dom": "^8.20.0",
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.0.24"
+  }
 }
